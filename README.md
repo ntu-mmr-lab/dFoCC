@@ -1,5 +1,7 @@
 # dFoCC
 
+[![DOI](https://zenodo.org/badge/105618413.svg)](https://doi.org/10.5281/zenodo.16946872)
+
 ## Requirements
 
 - CCP4 (only tested in version 8.0)
