@@ -467,10 +467,10 @@ def prepare_reaction_coordinate_utils(refining_residue: Any, init_or_dark_xyzin_
                 refining_residue.step_per_run = (225, 15) # (225, 5)
             case 2, False:
                 refining_residue.initial_parameters_step = (60, 60)
-                refining_residue.step_per_run = (63, 63) # (61, 61)
+                refining_residue.step_per_run = (61, 61) # (61, 61)
             case 2, True:
-                refining_residue.initial_parameters_step = (133, 133, 32) # (144, 144, 32)
-                refining_residue.step_per_run = (27, 27, 5) # (25, 25, 5)
+                refining_residue.initial_parameters_step = (144, 144, 32)
+                refining_residue.step_per_run = (25, 25, 5)
             case 3, False:
                 refining_residue.initial_parameters_step = (240, 240, 240)
                 refining_residue.step_per_run = (15, 15, 15)
@@ -481,7 +481,7 @@ def prepare_reaction_coordinate_utils(refining_residue: Any, init_or_dark_xyzin_
                 refining_residue.initial_parameters_step = (600, 600, 600, 600)
                 refining_residue.step_per_run = (7, 7, 7, 7)
             case 4, True:
-                refining_residue.initial_parameters_step = (720, 720, 720, 720, 5)
+                refining_residue.initial_parameters_step = (720, 720, 720, 720, 32)
                 refining_residue.step_per_run = (5, 5, 5, 5, 5)
             case 0, _:
                 raise Exception(f'Unexpected residue: no regular chi angle found in the side chain')

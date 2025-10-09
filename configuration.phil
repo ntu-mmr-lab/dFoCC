@@ -85,8 +85,8 @@ input {
         file_name = ./input/30us_vs_dark.mtz
 
         # the column names of `Fo(dark)`, `σ_Fo(dark)`, `Fc(dark)`, `φ_Fc(dark)`
-        labels = Fdark SIGFdark FCalc PHICalc
-        r_free_flags_label = FREE
+        labels = Fodark SIGFodark Fcdark PHIcdark
+        r_free_flags_label = FreeR_flag
     }
     difference_data {
         # dFo structure factor file, run `phenix.fobs_minus_fobs_map` to create that file

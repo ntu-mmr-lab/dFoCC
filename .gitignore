@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*demo*/
+*cycle*/
+*probe*/
+*_log_cycle.csv
+input/*
+output*
+preparing_sigma*_gridslice*/
+prepare/
+.ipynb_checkpoints
+0-coot-history.*
+INTERRUPT
+*__combined/
+*_phenix_refine/
+*_phenix_refine_dFc/
