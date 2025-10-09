@@ -1,0 +1,115 @@
+# list of residue to be refined
+# `chain_id`, `residue_id`, `n_value` should be set
+# `name` is optional and used as the prefix of the directory name
+# `alt_conf_id` should be set if and only if the initial structure has alternative conformations
+residue {
+    output_prefix = H309
+    chain_id = A
+    residue_id = 309
+    main_chain_rotation {
+        start {
+            residue_id = 308
+            atom_id = C
+        }
+        end {
+            residue_id = 310
+            atom_id = N
+        }
+    }
+    initial_parameters_step = 400 400 32 # both "#" and "!" are for comments
+    step_per_run = 9 9 5
+}
+
+residue {
+    output_prefix = D321
+    chain_id = A
+    residue_id = 321
+    main_chain_rotation {
+        start {
+            residue_id = 320
+            atom_id = C
+        }
+        end {
+            residue_id = 322
+            atom_id = CA
+        }
+    }
+    initial_parameters_step = 400 400 32
+    step_per_run = 9 9 5
+}
+
+residue {
+    output_prefix = E384
+    chain_id = A
+    residue_id = 384
+    initial_parameters_step = 600 600 600
+    step_per_run = 7 7 7
+}
+
+residue {
+    output_prefix = N395
+    chain_id = A
+    residue_id = 395
+    initial_parameters_step = 120 120
+    step_per_run = 31 31
+}
+
+# how many processor can be used in the same time
+# notice that keeping at least 4 of the processor / threads is recommended
+# to keep the interaction with the system and other visualizing tools simultaneously
+n_jobs = 28
+
+# you may set a max cycle number, so that the algorithm will be stopped earlier
+# set to -1 if you don't need this feature
+max_cycle = -1
+
+# `N_VALUE` is 200 divided by the assumed occupancy, and is used to scale the dFc map
+n_value = 12.00
+
+low_resolution = 30.00
+high_resolution = 1.64
+space_group = "'P 212121'"
+
+# select the region to be compared
+# within `SELECTION_RADIUS` Å of the selected reference atom
+selection_radius = 1.56
+
+input {
+    pdb {
+        # REQUIRED
+        # for region selection and the initial structure
+        dark_file_name = ./input/8Z1J.pdb
+
+        # optional:
+        # the pdb file provided as the initial structure to be modified
+        # by default (set as `None`), it will use the `DARK_XYZIN_NAME` file instead
+        initial_file_name = None
+    }
+    dark_data {
+        # REQUIRED: Fo(dark) and Fc(dark)
+        file_name = ./input/8Z3X-scaled.mtz
+
+        # the column names of `Fo(dark)`, `σ_Fo(dark)`, `Fc(dark)`, `φ_Fc(dark)`
+        labels = Fodark SIGFodark Fcdark PHIcdark
+        r_free_flags_label = FreeR_flag
+    }
+    difference_data {
+        # dFo structure factor file, run `phenix.fobs_minus_fobs_map` to create that file
+        # dFo map (DED map) can also be used directly (absent dFo reflections are not handled)
+        file_name = ./input/8Z3X-dFo.mtz
+    }
+
+    # extrapolated_data {
+    #     # optional:
+    #     # the extrapolated structure factor file for the conventional refinement
+    #     # of the residues that are not refined by dFoCC
+    #     # if not specified (set as `None`), the conventional refinement step is skipped
+    #     file_name = None
+    #
+    #     # the column names of `Fext(dark)`, `σ_Fext(dark)`
+    #     # these are optional if there is only one pair of F, σ in the file
+    #     !labels = amp-$(n_value)-Fext $(n_value)-nwdSIG
+    #     !r_free_flags_label = FREE
+    # }
+    interrupt_file_name = ./INTERRUPT
+}

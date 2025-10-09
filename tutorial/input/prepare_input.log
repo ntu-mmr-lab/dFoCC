@@ -1,0 +1,2291 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: SFALL            version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 15:42:26 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ Memory allocation (logical name, type, elements):
+   MEMSIZE R      5000000
+   MEMSIZE I      5000000
+
+FORMATTED      OLD     file opened on unit  45
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+Logical name: ATOMSF, Filename: /usr/xtal/ccp4-8.0/lib/data/atomsf.lib
+<!--SUMMARY_END--></FONT></B>
+
+ Data line--- TITLE Calculate Dark Structure Factor
+ Data line--- LABIN FP=FP SIGFP=SIGFP FREE=FreeR_flag
+ Data line--- LABOUT FC=Fcdark PHIC=PHIcdark
+ Data line--- MODE SFCALC XYZIN HKLIN
+ Data line--- RESOLUTION 30.00 1.64
+ Data line--- SYMMETRY 'P 212121'
+Reciprocal space symmetry: 
+Space group: "P 21 21 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 19 "P 21 21 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,-k,+l       5  +h,-k,-l       7  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,+k,-l       6  -h,+k,+l       8  +h,-k,+l    
+ Data line--- END
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: ./input/8Z1J.mtz 
+
+ * Title:
+
+ Converted from mmCIF block r8z1jsf
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 63640
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag IMEAN SIGIMEAN FP SIGFP
+
+ * Column Types :
+
+ H H H I J Q F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00017    0.37180     (     76.565 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING: Reflections not sorted as H slow, K medium, L fast
+ $$
+<!--SUMMARY_END--></FONT></B>
+  SFALL may fail or give unreliable output later on.
+
+Reciprocal space symmetry: 
+Space group: "P 21 21 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 19 "P 21 21 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,-k,+l       5  +h,-k,-l       7  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,+k,-l       6  -h,+k,+l       8  +h,-k,+l    
+ ***  Calculation symmetry using space-group CalcSpaceGroup   19 ***
+
+  Logical name: XYZIN  File name: ./input/8Z1J.pdb
+  PDB file is being opened on unit 1 for INPUT.
+
+  MATRICES DERIVED FROM CRYST1 CARD IN COORDINATE FILE
+
+
+             RF                                  RO
+
+    0.020  -0.000  -0.000  -0.000       50.840   0.000   0.000  -0.000
+   -0.000   0.015  -0.000   0.000        0.000  65.600   0.000   0.000
+    0.000  -0.000   0.007  -0.000        0.000   0.000 153.130  -0.000
+   -0.000   0.000  -0.000   1.000       -0.000   0.000  -0.000   1.000
+
+
+
+
+ Form factors used are   
+ AtomName - formfac number -  (AI BI),I=1,NGauss - sum(AI)
+  Default value is 5 term gaussian
+  H       1     0.49300  10.51090     0.32291  26.12570
+                0.14019   3.14236     0.04081  57.79970     0.00304   0.00000     0.99995
+  C       2     2.31000  20.84390     1.02000  10.20750
+                1.58860   0.56870     0.86500  51.65120     0.21560   0.00000     5.99920
+  N       3    12.21260   0.00570     3.13220   9.89330
+                2.01250  28.99750     1.16630   0.58260   -11.52900   0.00000     6.99460
+  O       4     3.04850  13.27710     2.28680   5.70110
+                1.54630   0.32390     0.86700  32.90890     0.25080   0.00000     7.99940
+  S       5     6.90530   1.46790     5.20340  22.21510
+                1.43790   0.25360     1.58630  56.17200     0.86690   0.00000    15.99980
+
+ Title: Calculate Dark Structure Factor
+
+ Structure Factor Calculation 
+ Structure Factor Calculation to match existing FOBS file  
+      -  Atom file Read ***
+  Reflections excluded if Free R  factor =     0
+
+
+ Chain Names - First Residue - Last Residue - serial Kcount
+
+    INPUT X USED AS  X
+    INPUT Y USED AS  Y
+    INPUT Z USED AS  Z
+  Title 
+    Calculate Dark Structure Factor
+
+ Unit CELL Parameters are =    50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+ Space Group Number       =    19
+
+
+
+ Hmin, Kmin, Lmin, Hmax, Kmax, Lmax are     0    0    0   31   40   93
+
+
+ Sampling Intervals NX,NY,NZ are   112  144  340
+
+
+ Map dimensions are  X =     0 to   111 Y =     0 to   143 Z =     0 to    85
+
+
+ Minimum,Maximum 4(SNTH/L)**2 are  0.0002 and  0.3718
+  intervals of s for rfactor analysis are 1./   20
+
+
+ ie  Resolution Limits   76.6 to    1.6 Angstroms
+
+
+ BADD =   0.00
+
+
+ Initial Value of Atom radius in "fc" MAP       2.50
+ This is modified by a factor Sqrt(B+25)/2PI to "spread"  the density for atoms with high B factors
+
+   Weight  Omit       0.00   1000.00
+
+
+ Scale  BfactOverall        1.00      0.00
+ FCALC is scaled by SCALE*exp(-BfactOverall*S/4)
+
+
+ DSmin DSmax       1.64      4.47
+ in refinement overall Scale and B are refined using 
+      reflections with DSMN < = D < = DSmax 
+
+
+
+
+ Reflections for which FOBS < -1.0 SIGMA Omitted
+
+
+ Breset is -1.00
+
+ Limits for atoms:     AXIS    MIN      MAX
+                         1  0.00000  1.00000
+                         2  0.00000  1.00000
+                         3 -0.01633  0.26634
+ 
+ 
+
+ Upper limits are:     AXIS    MIN      MAX
+                         1  0.04917  0.95083
+                         2  0.03811  0.96189
+                         3  0.01633  0.23368
+ 
+ 
+
+
+  First 10 atoms of atsort - orthog coordinates
+         1C    GLY         3 30.4320 29.8340 -8.9760 1.00   80.90    2
+   fractional coordinates  0.59858 0.45479-0.05862
+
+
+  First 10 atoms of atsort - orthog coordinates
+         2O    GLY         3 31.6210 29.8570 -8.6670 1.00   81.44    4
+   fractional coordinates  0.62197 0.45514-0.05660
+         3N    VAL         4 29.5220 29.1620 -8.2840 1.00   62.16    3
+   fractional coordinates  0.58068 0.44454-0.05410
+         4CA   VAL         4 29.7800 27.8500 -7.7440 1.00   51.70    2
+   fractional coordinates  0.58576 0.42454-0.05057
+         5C    VAL         4 29.1670 26.8270 -8.6820 1.00   43.79    2
+   fractional coordinates  0.57370 0.40895-0.05670
+         6O    VAL         4 28.3430 27.1520 -9.5380 1.00   50.98    4
+   fractional coordinates  0.55749 0.41390-0.06229
+         7CB   VAL         4 29.2250 27.7030 -6.3060 1.00   54.54    2
+   fractional coordinates  0.57484 0.42230-0.04118
+         8CG1  VAL         4 29.6050 28.9200 -5.4640 1.00   60.36    2
+   fractional coordinates  0.58232 0.44085-0.03568
+         9CG2  VAL         4 27.7250 27.4930 -6.3110 1.00   58.00    2
+   fractional coordinates  0.54534 0.41910-0.04121
+        10H    VAL         4 28.7320 29.4570 -8.1140 1.00   74.61    1
+   fractional coordinates  0.56515 0.44904-0.05299
+        11HA   VAL         4 30.7380 27.6990 -7.7150 1.00   62.07    1
+   fractional coordinates  0.60460 0.42224-0.05038
+
+   6th Form factor added:   
+ AtomName - formfac number  -  (AI BI),I=1,5  -  sum(AI) 
+  P                 6     6.43450   1.90670     4.17910  27.15700
+                          1.78000   0.52600     1.49080  68.16450     1.11490   0.00000    14.99930
+
+
+   7th Form factor added:   
+ AtomName - formfac number  -  (AI BI),I=1,5  -  sum(AI) 
+  CL                7    11.46040   0.01040     7.19640   1.16620
+                          6.25560  18.51940     1.64550  47.77840    -9.55740   0.00000    17.00050
+
+  First 10 atoms of sorted file in asym unit -  
+       30.08232   0.05915   0.03568    860.36 1.00         2    4CG1  VAL 
+       30.07484   0.07770   0.04118    754.54 1.00         2    4CB   VAL 
+       30.04534   0.08090   0.04121    958.00 1.00         2    4CG2  VAL 
+       30.08576   0.07546   0.05057    451.70 1.00         2    4CA   VAL 
+       30.06515   0.05096   0.05299   1074.61 1.00         1    4ZZZ  VAL 
+       30.08068   0.05546   0.05410    362.16 1.00         3    4N    VAL 
+       30.12197   0.04486   0.05660    281.44 1.00         4    3O    GLY 
+       30.07370   0.09105   0.05670    543.79 1.00         2    4C    VAL 
+       30.09858   0.04521   0.05862    180.90 1.00         2    3C    GLY 
+       30.05750   0.08610   0.06229    650.98 1.00         4    4O    VAL 
+
+  First atom of sorted file in atsort 
+       10.48759  10.90329  -0.01622 802134.31     91.00  888O    HOH 
+ Number of atoms input            =          8159
+ Number of atoms in sort          =        9095
+ Number in density generation     =   9095
+ Number completely within fft box =   7223
+     Minimum B =    17.49
+     Maximum B =   132.58
+     Average B =    35.10
+     Number of Bs < BfactReset =        0
+     Number of Bs > 99.99  =       32
+ 
+
+ Number of reflections used  =    63628
+ Number of reflns. on file   =     63640
+ Old value of SCALE is       =         1.000
+ New value of SCALE is       =         0.880
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: FFTHKLSCR   Filename: /tmp/mifong/sfall_IO4.38459 
+
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: FFTHKLSCR   Filename: /tmp/mifong/sfall_IO4.38459 
+
+
+
+  to match FOBS , FC = Scale*Exp(-BfactOverall*SSQ/LL)*FCALC.
+  Old values of SCALE and B overall are     0.8800E+00     0.0000E+00
+
+
+ New values of SCALE and BfactOverall   0.128E+01  -0.936E+00 Based on  60245 reflections with s**2 between     0.050 and     0.372
+
+
+  Used values of SCALE and B overall are
+ SCALE      0.1283E+01 B Value     -0.9357E+00
+
+ NB:  Number of "possible" reflections is an underestimation - Centrics Kcounted at reduced multiplicity
+
+  $TABLE: Rfactor analysis v resln  :
+ $GRAPHS:<Rfactor> v. resln Calculate Dark Structure Factor         :N:1,6:
+:<Nrefs> and <Nposs> v. resln Calculate Dark Structure Factor         :N:1,2,3:
+:<Fobs> and <Fc> v. resln Calculate Dark Structure Factor         :N:1,4,5:
+ $$
+ 1/resol^2 NO_OF_REF N_POSS <Fobs>   <Fc>      Rfactor   Wdelta**2(Fobs_Scale) $$
+ $$
+   0.025    3290    2990    415.88    631.38      0.60     55.07
+   0.075    5685    5466    370.26    395.55      0.17     19.87
+   0.125    7272    7080    202.48    207.48      0.16     12.69
+   0.175    8480    8383    135.16    137.03      0.16      9.84
+   0.225    9633    9508     93.31     95.20      0.17      8.09
+   0.275   10583   10514     56.72     59.66      0.21      6.70
+   0.325   11486   11431     36.63     39.86      0.27      5.99
+   0.375    5212   12280     28.70     30.92      0.31      5.77
+ $$
+ Total no. of reflections used      61641
+
+  Overall Reliability index is    0.2502
+
+  SIGMA W DELTA SQUARED (PII) ABSOLUTE SCALE       0.9660E+09
+
+  $TABLE: Free Rfactor analysis v resln  :
+ $GRAPHS:<Rfactor> v. resln Calculate Dark Structure Factor         :N:1,6:
+:<Nrefs> and <Nposs> v. resln Calculate Dark Structure Factor         :N:1,2,3:
+:<Fobs> and <Fc> v. resln Calculate Dark Structure Factor         :N:1,4,5:
+ $$
+ 1/resol^2 NO_OF_REF N_POSS <Fobs>   <Fc>      Rfactor   Wdelta**2(Fobs_Scale) $$
+ $$
+   0.025      92    2990    389.25    535.53      0.47     38.76
+   0.075     185    5466    381.84    407.99      0.19     19.37
+   0.125     238    7080    213.36    215.48      0.18     12.36
+   0.175     285    8383    144.82    148.78      0.18     10.15
+   0.225     305    9508     97.13     97.85      0.18      7.97
+   0.275     337   10514     58.76     61.87      0.21      6.48
+   0.325     357   11431     35.62     39.49      0.30      5.90
+   0.375     188   12280     28.63     30.76      0.33      5.90
+ $$
+ Total no. of reflections used       1987
+
+  Free    Reliability index is    0.2307
+
+  SIGMA W DELTA SQUARED (PII) ABSOLUTE SCALE       0.9660E+09
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: ./input/8Z1J-fofc.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 63640
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag FP SIGFP Fcdark PHIcdark
+
+ * Column Types :
+
+ H H H I F Q F P
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00017    0.37180     (     76.565 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ SFALL:   Normal Termination of structure factor calc.
+Times: User:       0.2s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: CAD              version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 15:42:26 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- TITLE Combine Dark and Triggered Structure Factor
+ Data line--- MONITOR BRIEF
+ Data line--- LABIN file 1 E1=FreeR_flag E2=FP E3=SIGFP E4=Fcdark E5=PHIcdark
+ Data line--- LABOUT file 1 E1=FreeR_flag E2=Fodark E3=SIGFodark E4=Fcdark E5=PHIcdark
+ Data line--- CTYPIN file 1 E1=I E2=F E3=Q E4=F E5=P
+ Data line--- RESOLUTION file 1 30.00 1.64
+ Data line--- LABIN file 2 E1=FP E2=SIGFP
+ Data line--- LABOUT file 2 E1=Fotr E2=SIGFotr
+ Data line--- CTYPIN file 2 E1=F E2=Q
+ Data line--- RESOLUTION file 2 30.00 1.64
+    Indices output even if all data items flagged "missing"
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z1J-fofc.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 63640
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag FP SIGFP Fcdark PHIcdark
+
+ * Column Types :
+
+ H H H I F Q F P
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00017    0.37180     (     76.565 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+Reciprocal space symmetry: 
+Space group: "P 21 21 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 19 "P 21 21 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,-k,+l       5  +h,-k,-l       7  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,+k,-l       6  -h,+k,+l       8  +h,-k,+l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [mmm] hkl:h>=0, k>=0, l>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=FreeR_flag E2=FP E3=SIGFP E4=Fcdark E5=PHIcdark
+ Data line--- LABOUT E1=FreeR_flag E2=Fodark E3=SIGFodark E4=Fcdark E5=PHIcdark
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   8
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FreeR_flag  E21=Fodark  E31=SIGFodark  E41=Fcdark
+  E51=PHIcdark 
+
+
+ MTZOUT_LABELS are H K L and -
+  FreeR_flag  Fodark  SIGFodark  Fcdark
+  PHIcdark 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: ./input/8Z3X.mtz 
+
+ * Title:
+
+ Converted from mmCIF block r8z3xAsf
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 63625
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag FP SIGFP
+
+ * Column Types :
+
+ H H H I F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00107    0.37180     (     30.582 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+ Data line--- LABIN  E1=FP E2=SIGFP
+ Data line--- LABOUT E1=Fotr E2=SIGFotr
+
+
+ After Processing File_Number:  2
+ Number of columns so far    :  10
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FreeR_flag  E21=Fodark  E31=SIGFodark  E41=Fcdark
+  E51=PHIcdark  E12=Fotr  E22=SIGFotr 
+
+
+ MTZOUT_LABELS are H K L and -
+  FreeR_flag  Fodark  SIGFodark  Fcdark
+  PHIcdark  Fotr  SIGFotr 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=FreeR_flag E2=FP E3=SIGFP E4=Fcdark E5=PHIcdark
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z1J-fofc.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 63640
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag FP SIGFP Fcdark PHIcdark
+
+ * Column Types :
+
+ H H H I F Q F P
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00017    0.37180     (     76.565 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of      8 Columns
+ and a total of      63640 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   2
+
+  EPSILON Zone   4
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      63640
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =         17
+ Total Number of HKL passed to sort for this file =      69851
+ Data line--- LABIN  E1=FP E2=SIGFP
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: ./input/8Z3X.mtz 
+
+ * Title:
+
+ Converted from mmCIF block r8z3xAsf
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 63625
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag FP SIGFP
+
+ * Column Types :
+
+ H H H I F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00107    0.37180     (     30.582 -      1.640 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+ Reading from HKLIN mtz file_Number = :2
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN2 contains a total of      6 Columns
+ and a total of      63625 Reflections
+
+
+ For file HKLIN2
+ Total Number of HKL read                         =      63625
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          2
+ Total Number of HKL passed to sort for this file =      69851
+
+
+ Total number read for all files    =     127265
+ Total passed to sort for all files =     139702
+ Total number systematic absent     =          0
+ Total number rejected outside resol=         19
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     5
+
+ File_Number =    2 Number_Columns_Selected =     2
+
+ Data line--- LABOUT E11=FreeR_flag E21=Fodark E31=SIGFodark E41=Fcdark E51=PHIcdark E12=Fotr E22=SIGFotr
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: ./input/8Z3X-combined.mtz 
+
+ * Title:
+
+ Combine Dark and Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+
+ Total number from Sorting Routine =     139702
+ Final Total of Unique records to HKLOUT =      63623
+ Final Total of Missing records to HKLOUT =          0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+
+<a name="scaleitscaleit"><h2>SCALEIT</h2></a>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: SCALEIT          version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 15:42:26 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="tocSCALEIT"><h2>Contents</h2></a>
+<ul>
+<li><a href="#commandSCALEIT">Command Input</a>
+<li><a href="#inpSCALEIT">Input MTZ File</a>
+<li><a href="#outSCALEIT">Output File</a>
+<li><a href="#appscaSCALEIT">Application of scales and analysis</a>
+</ul>
+<hr>
+
+<a name="commandSCALEIT"><h3>Command Input</h3></a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#title">TITLE    </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#analyse">ANALYSE </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#converge">CONVERGE </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#labin">LABIN </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#exclude">EXCLUDE </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#graph">GRAPH </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#resolution">RESOLUTION</a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#weight">WEIGHT</a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#nowt">NOWT</a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#refine">REFINE </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#scale">SCALE </a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#scatter">SCATTER</a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#symmetry">SYMMETRY</a>
+<a href="/usr/xtal/ccp4-8.0/html/scaleit.html#end">END</a>
+<!--SUMMARY_END--></FONT></B>
+ Data line--- TITLE Scale Triggered Structure Factor
+ Data line--- RESOLUTION 10.0 2.5
+ Data line--- NOWT
+  Calculate scales WITHOUT any sigma weighting.
+ Data line--- CONVERGE NCYC 4
+ Maximum number of cycles    4
+ Data line--- CONVERGE ABS 0.001
+Absolute convergence limit    0.0010
+ Data line--- CONVERGE TOLR -7
+  Tolerance -7.00000
+ Data line--- REFINE SCALE WILSON
+ Data line--- AUTO
+  Automatic scaling of all columns in given datasets
+ Data line--- LABIN FP=Fodark SIGFP=SIGFodark FPH1=Fotr SIGFPH1=SIGFotr
+  FP=  Fodark                                                                    
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:   The following analyses will be carried out:  FP=  Fodark   FPH= Fotr  SIGFotr                                                
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="inpSCALEIT"><h3>Input MTZ File</h3></a>
+<!--SUMMARY_END--></FONT></B>
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: ./input/8Z3X-combined.mtz 
+
+ * Title:
+
+ Combine Dark and Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+
+ AUTOMATIC COLUMN SELECTION
+ ==========================
+
+ The program will use DATASET information from the MTZ file
+ to identify all scalable columns for each specified
+ derivative i.e. FPH, DPH, IMEAN etc and apply the scale
+ factor to all these columns.
+
+ This is a new feature and there may be problems -
+ check the information below for warnings or errors
+ and report any problems to ccp4@dl.ac.uk
+
+
+ Dataset  1 is unknown in crystal unknown
+ and is assigned to be derivative  1
+
+   The following columns were defined by LABIN:
+       Fotr                
+       SIGFotr             
+
+   The following additional columns will have the same
+   scale factor applied automatically:
+       Column Fodark                   (type F)
+
+ ** All the labels with column type F have already
+ been assigned for this derivative
+ Could it be a misassigned column type?
+ This might be an FPH(+) or FPH(-) mis-labelled as
+ an FPH - looking for spare labels of type G ...
+          Ok - assigned to label FPH1(+)                       
+
+       Column SIGFodark                (type Q)
+ What is this the sigma of? I need some clues!
+ Could it be a misassigned column type?
+ The last column I looked at was assigned as an
+ FPH(+) or FPH(-) - maybe this is its sigma?
+ Looking for spare labels of type L ...
+          Ok - assigned to label SIGFPH1(+)                    
+
+       Column Fcdark                   (type F)
+
+ ** All the labels with column type F have already
+ been assigned for this derivative
+ Could it be a misassigned column type?
+ This might be an FPH(+) or FPH(-) mis-labelled as
+ an FPH - looking for spare labels of type G ...
+          Ok - assigned to label FPH1(-)                       
+
+
+ * Automatic column selection completed *
+ * You should check the above output for errors
+
+ The selection may not be correct - for example, sigmas
+ maybe wrongly assigned, or some columns may have been
+ selected against type.
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING: Check automatic selection output carefully for errors!
+ $$
+<!--SUMMARY_END--></FONT></B>
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="outSCALEIT"><h3>Output File</h3></a>
+<!--SUMMARY_END--></FONT></B>
+  SPACE GROUP NUMBER    19
+  SPACE GROUP NAME  P 21 21 21
+  POINT GROUP NAME  PG222     
+  NUMBER OF SYMMETRY OPERATORS   4
+  NUMBER OF PRIMITIVE SYMMETRY OPERATORS   4
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+
+
+
+
+                                   OVERALL DERIVATIVE TO NATIVE SCALING
+                               ========================================
+
+<!--SUMMARY_END--></FONT></B>
+
+
+ Position of Native F         5
+ Position of Derivative F     9
+ Number of Cycles             4
+ Convergence Limit          0.001000
+
+
+
+
+ Derivative:       FP=  Fodark   FPH= Fotr  SIGFotr                                               
+ Initial derivative scale factor (for F)  =     1.0100  from   18085  reflections
+
+
+
+
+ The overall scale is applied to the derivative F
+
+ CORRELATION MATRIX ELEMENTS > 0.7
+
+ CORRELATION MATRIX ELEMENTS > 0.7
+
+ CORRELATION MATRIX ELEMENTS > 0.7
+
+ CORRELATION MATRIX ELEMENTS > 0.7
+
+   -- Cycle  Number:       4
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+
+ MEAN RESIDUAL  W D**2/( M - N) :     242344814.34221                 FOR    18085   REFLECTIONS
+
+
+                 SCALES (for F)
+
+              NATIVE  DERIVATIVE
+ SHIFTS        0.0000    0.0000
+ SD 'S         0.0002    0.0002
+<!--SUMMARY_END--></FONT></B>
+
+  Scale adjusted by "Wilson" scaling: multiplied by    1.00259 to give Scale =    1.00996
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+
+  ---- RMS differences calculated BEFORE Wilson rescaling ----
+
+
+ RMS  isomorphous difference for derivative   1 is   26.32
+  Number of observations: 18085
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<hr>
+
+<a name="appscaSCALEIT"><h2>APPLICATION OF SCALES AND ANALYSIS OF DIFFERENCES</h2></a>
+
+
+                SCALE (F)
+ Derivative   1     1.010
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+
+    ----------------------------------------------------------
+    ----------------------------------------------------------
+   Isomorphous Differences
+ Derivative title:  FP=  Fodark   FPH= Fotr  SIGFotr                                               
+ Differences greater than   4.2027 * RMSDIF are unlikely,
+ ie  acceptable differences are less than   110.61
+ Maximum difference   171.00
+
+ Difference interval for Histogram    13
+<!--SUMMARY_END--></FONT></B>
+
+
+        1 sort keys, in columns    8
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+
+ ************************************************************************************************************************
+
+  Large differences (isomorphous & anomalous)
+
+    H   K   L   RES     FP  SIGP   FPH1  SIGF1
+
+
+    0   3  16 0.013   653   15    768   31
+                                 =========                                                                                          
+    0   4  41 0.075   477   13    593   29
+                                 =========                                                                                          
+    0   5  39 0.071   643   17    815   36
+                                 =========                                                                                          
+    0  11  34 0.077  1121   26   1004   49
+                                 =========                                                                                          
+    0  17   1 0.067   583   14    697   26
+                                 =========                                                                                          
+    1   0  34 0.050   491   13    644   31
+                                 =========                                                                                          
+    1  13   0 0.040   779   17    908   40
+                                 =========                                                                                          
+    2   0  22 0.022   676   17    838   38
+                                 =========                                                                                          
+    2  11  20 0.047   427    8    312   12
+                                 =========                                                                                          
+    2  17   0 0.069   811   18    944   40
+                                 =========                                                                                          
+    7   0  31 0.060  1251   28   1397   59
+                                 =========                                                                                          
+    7   0  32 0.063   275   11    410   21
+                                 =========                                                                                          
+    9   5  15 0.047   662   11    547   17
+                                 =========                                                                                          
+   11   0  14 0.055   267    9    146   21
+                                 =========                                                                                          
+   13   0  26 0.094   401   10    515   23
+                                 =========                                                                                          
+<!--SUMMARY_END--></FONT></B>
+
+
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: ./input/8Z3X-scaled.mtz 
+
+ * Title:
+
+ Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+
+
+    49978 STRUCTURE FACTORS SCALED AND WRITTEN TO OUTPUT FILE
+<!--SUMMARY_END--></FONT></B>
+
+
+
+
+
+                               ANALYSES OF SCALE FACTOR ON INTENSITIESAFTER CORRECTION
+                               ========================================================
+
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+    18085 records passed to sort
+   15628 acentric,    2457 centric.
+
+
+
+
+ Least squares line : Gradient - intercept SUMDEL Npoints
+  Gradient should be 1 for 2 equivalent data sets
+  Gradient should be >> 1 for derivative v native data sets
+  $TEXT:reference:
+  $$ Normal probability $$
+ Dave Smith and Lynne Howell ( J.Appl. Cryst 1992 25 81-86) $$
+<!--SUMMARY_END--></FONT></B>
+<applet width=" 400" height=" 300" code="JLogGraph.class" 
+codebase="/usr/xtal/ccp4-8.0/bin"><param name="table" value="
+
+
+
+ $TABLE: Centric Normal probability v resolution     FP=  Fodark   FPH= Fotr  SIGFotr :
+ $GRAPHS : Gradient/intercept v resolution (centric data; 0.9 prob cutoff):A:1,4,5,8,9: : Nref(all data; 0.9 prob cutoff) v resolution :N:1,3,7: $$ 1/resol^2 
+ Resolution  
+ Total_Number_reflections  
+ Gradient_on_all_reflections(>1?) 
+ Intercept_on_all_reflections(=0?) 
+ Sum_of_diffs_on_all_reflections 
+ Number_reflections_prob.lt.0.9  
+ Gradient_on_reflections_prob.lt.0.9(>1?) 
+ Intercept_on_reflections_prob.lt.0.9(=0?) 
+ Sum_of_diffs_on_reflections_prob.lt.0.9  $$ 
+ 1/resol^2  Resn  NRef    Gradient  Intercept   SUMDEL   Nref2  Gradient2  Intercept2  SUMDEL2  $$ 
+  0.012    9.1      32       1.448     0.080       0.8      19       1.318     0.046       0.0
+  0.020    7.1     126       1.491     0.051       2.5      63       1.346     0.047       0.0
+  0.028    6.0     125       1.451     0.050       0.9      84       1.357     0.048       0.0
+  0.036    5.3     134       1.465     0.042       1.0      86       1.298     0.047       0.1
+  0.044    4.8     130       1.517     0.061       2.1      73       1.349     0.047       0.0
+  0.052    4.4     124       1.452     0.045       1.0      68       1.353     0.043       0.0
+  0.060    4.1     141       1.481     0.050       2.0      97       1.237     0.044       0.4
+  0.068    3.8     126       1.504     0.075       2.1      69       1.305     0.047       0.1
+  0.076    3.6     128       1.486     0.046       1.4      85       1.340     0.049       0.0
+  0.084    3.5     131       1.478     0.044       1.6      76       1.338     0.048       0.0
+  0.092    3.3     134       1.512     0.056       2.1      72       1.343     0.051       0.0
+  0.100    3.2     133       1.443     0.060       2.0      89       1.336     0.046       0.0
+  0.108    3.0     131       1.464     0.041       1.3      79       1.342     0.047       0.0
+  0.116    2.9     134       1.502     0.066       1.9      87       1.345     0.048       0.0
+  0.124    2.8     124       1.442     0.048       0.9      87       1.340     0.048       0.0
+  0.132    2.8     136       1.473     0.048       1.5      94       1.295     0.048       0.1
+  0.140    2.7     131       1.486     0.064       2.3      79       1.301     0.049       0.1
+  0.148    2.6     134       1.409     0.046       0.4     105       1.331     0.047       0.0
+  0.156    2.5     203       1.456     0.037       1.3     141       1.326     0.049       0.0
+ $$ 
+"><b>For inline graphs use a Java browser</b></applet>
+  Total (cent)    2457       1.489     0.052      29.6    1553       1.350     0.048       0.4
+<applet width=" 400" height=" 300" code="JLogGraph.class" 
+codebase="/usr/xtal/ccp4-8.0/bin"><param name="table" value="
+
+
+
+ $TABLE: Acentric Normal probability v resolution     FP=  Fodark   FPH= Fotr  SIGFotr :
+ $GRAPHS : Gradient/intercept v resolution (acentric data; 0.9 prob cutoff):A:1,4,5,8,9: : Nref(all data; 0.9 prob cutoff) v resolution :N:1,3,7: $$ 1/resol^2 
+ Resolution  
+ Total_Number_reflections  
+ Gradient_on_all_reflections(>1?) 
+ Intercept_on_all_reflections(=0?) 
+ Sum_of_diffs_on_all_reflections 
+ Number_reflections_prob.lt.0.9  
+ Gradient_on_reflections_prob.lt.0.9(>1?) 
+ Intercept_on_reflections_prob.lt.0.9(=0?) 
+ Sum_of_diffs_on_reflections_prob.lt.0.9  $$ 
+ 1/resol^2  Resn  NRef    Gradient  Intercept   SUMDEL   Nref2  Gradient2  Intercept2  SUMDEL2  $$ 
+  0.012    9.1      65       1.450    -0.016       2.0      44       1.588    -0.025       0.0
+  0.020    7.1     340       1.561    -0.031      33.7     209       1.558    -0.026       0.0
+  0.028    6.0     435       1.662    -0.023       2.5     247       1.582    -0.026       0.0
+  0.036    5.3     512       1.651    -0.016       1.2     305       1.565    -0.027       0.0
+  0.044    4.8     582       1.652    -0.011       3.5     364       1.559    -0.026       0.1
+  0.052    4.4     629       1.662    -0.019       3.8     367       1.584    -0.026       0.0
+  0.060    4.1     698       1.673    -0.016       5.5     413       1.580    -0.026       0.0
+  0.068    3.8     741       1.679    -0.020       5.9     416       1.583    -0.026       0.0
+  0.076    3.6     789       1.654    -0.030      38.2     455       1.584    -0.026       0.0
+  0.084    3.5     837       1.639    -0.025      40.5     477       1.570    -0.026       0.0
+  0.092    3.3     900       1.644    -0.033      88.2     527       1.583    -0.026       0.0
+  0.100    3.2     924       1.653    -0.025      46.7     554       1.575    -0.027       0.0
+  0.108    3.0     980       1.658    -0.017       4.3     580       1.583    -0.026       0.0
+  0.116    2.9    1002       1.637    -0.024      34.6     620       1.583    -0.028       0.0
+  0.124    2.8    1043       1.655    -0.022       5.0     687       1.581    -0.027       0.0
+  0.132    2.8    1090       1.644    -0.020       2.5     734       1.581    -0.027       0.0
+  0.140    2.7    1095       1.642    -0.020       3.0     736       1.582    -0.027       0.0
+  0.148    2.6    1156       1.637    -0.024       2.7     834       1.579    -0.027       0.0
+  0.156    2.5    1810       1.631    -0.021       2.7    1307       1.582    -0.027       0.1
+ $$ 
+"><b>For inline graphs use a Java browser</b></applet>
+  Total (acen)   15628       1.652    -0.022     326.1    9876       1.583    -0.027       0.5
+
+
+ ------------------------------------------------------------------------------------------------------------------------
+
+    Scaling for derivative no. 1 Derivative title:  FP=  Fodark   FPH= Fotr  SIGFotr                                               
+
+
+ Histogram showing distribution of differences
+
+     Table shows the number of reflections in bins of difference, for each resolution shell
+     Bins are headed by the difference corresponding to the mid-point of each bin
+
+
+
+
+   Isomorphous Differences
+   -----------------------
+ Derivative title:  FP=  Fodark   FPH= Fotr  SIGFotr                                               
+
+     d     -104   -91   -78   -65   -52   -39   -26   -13     0    13    26    39    52    65    78    91   104
+
+    15.81     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     9.13     0     0     2     2     5     8    19    14    15    20     6     4     1     1     0     0     0
+     7.07     5     2     4    10    16    35    58    87    94    79    38    23     9     4     2     0     0
+     5.98     1     2     1     5     8    36    77   107   115    95    63    29    17     4     0     0     0
+     5.27     0     0     3     9    16    45    69    99   141   111    68    45    25    11     3     1     0
+     4.77     1     4     6    12    25    48    68    94   127   130    88    61    25    15     6     1     1
+     4.39     1     5     7    17    36    56    92   104   120   108    96    53    34    14     3     3     4
+     4.08     1     6     5    22    39    57    94   113   143   136   102    66    26    17     4     3     5
+     3.83     5     3     5    23    33    60   110   117   132   124    92    80    41    21    10     9     2
+     3.63     3     1     7    18    29    72   110   156   141   148   101    61    38    20     7     4     1
+     3.45     1     1     5     9    40    66    91   153   153   183   110    82    38    23     5     5     3
+     3.30     0     3     5    14    38    57   126   164   197   182   114    79    27    17     8     3     0
+     3.16     1     1     1     7    26    51   122   158   228   223   123    61    31    18     5     1     0
+     3.04     0     0     0     5    27    54   141   210   222   196   152    65    28     6     5     0     0
+     2.94     0     1     2     7    20    54   130   213   246   234   153    49    20     7     0     0     0
+     2.84     0     0     0     4    20    53   131   245   280   233   120    57    16     5     3     0     0
+     2.75     0     0     2     2    18    48   130   252   334   228   142    53    11     5     1     0     0
+     2.67     0     0     1     3    21    58   130   242   304   261   127    52    19     4     3     1     0
+     2.60     0     0     0     3    12    56   134   291   323   271   120    59    15     4     2     0     0
+     2.53     0     0     0     8    23    84   214   420   540   402   205    86    24     4     3     0     0
+
+    Total    19    29    56   180   452   998  2046  3239  3855  3364  2020  1065   445   200    70    31    16
+
+<applet width=" 400" height=" 300" code="JLogGraph.class" 
+codebase="/usr/xtal/ccp4-8.0/bin"><param name="table" value="
+
+
+
+ $TABLE:Analysis v resolution    FP=  Fodark   FPH= Fotr  SIGFotr :
+ $GRAPHS  :     Kraut_sc and RMS(FP/FHP)  v resolution :N:1,5,6 :
+ : Rfac/Wted_R v resolution :N:1,7,9 :
+ : <diso> and Max(diso) v resolution :N:1,10,11:
+ : <dano> and Max(dano) v resolution :N:1,14,15:$$
+ 1/resol^2 
+ Resolution  
+ Number_reflections  
+ Mean_FP_squared 
+ Kraut_scale 
+ Sqrt(Mean_FP_squared/Mean_FPH_squared)
+ Rfactor 
+ Rfactor_I 
+ Rfactor_W 
+ Mean_Abs(Diso) 
+ Maximum_Diso 
+ Number_reflections_with_anomalous_differences  
+ Mean_Dano(=0?) 
+ Mean_Abs(Dano) 
+ Maximum_Dano 
+ Mean_Diso/0.5*Mean_Dano(Kemp) $$ 
+
+
+ 1/resol^2  Res   NRef    <FP**2>  Sc_kraut SCALE   RFAC  RF_I  Wted_R  <diso> max(diso) N(ano) <ano> <|ano|> max(ano) Kemp  $$ 
+  0.012    9.1      97     300906.  0.989  0.988  0.045  0.081  0.038    22.7      82     0     0.0     0.0       0  0.0000
+  0.020    7.1     466     222680.  0.984  0.982  0.054  0.091  0.054    22.5     114     0     0.0     0.0       0  0.0000
+  0.028    6.0     560     163325.  0.996  0.994  0.056  0.091  0.054    20.0     161     0     0.0     0.0       0  0.0000
+  0.036    5.3     646     171978.  1.004  1.002  0.059  0.093  0.056    21.8      84     0     0.0     0.0       0  0.0000
+  0.044    4.8     712     218714.  1.003  1.001  0.059  0.093  0.054    24.4     128     0     0.0     0.0       0  0.0000
+  0.052    4.4     753     268438.  1.001  0.998  0.057  0.098  0.049    26.4     152     0     0.0     0.0       0  0.0000
+  0.060    4.1     839     246137.  1.001  0.999  0.057  0.097  0.050    25.4     145     0     0.0     0.0       0  0.0000
+  0.068    3.8     867     228378.  1.006  1.003  0.064  0.104  0.059    27.4     135     0     0.0     0.0       0  0.0000
+  0.076    3.6     917     202244.  0.999  0.997  0.063  0.103  0.058    25.0     171     0     0.0     0.0       0  0.0000
+  0.084    3.5     968     165629.  1.011  1.007  0.067  0.110  0.059    24.3     116     0     0.0     0.0       0  0.0000
+  0.092    3.3    1034     130509.  1.005  1.001  0.070  0.112  0.059    22.2      92     0     0.0     0.0       0  0.0000
+  0.100    3.2    1057     105310.  1.011  1.007  0.070  0.113  0.058    20.2     113     0     0.0     0.0       0  0.0000
+  0.108    3.0    1111      81366.  1.008  1.005  0.077  0.123  0.059    19.6      75     0     0.0     0.0       0  0.0000
+  0.116    2.9    1136      68149.  1.006  1.002  0.079  0.127  0.058    18.2      94     0     0.0     0.0       0  0.0000
+  0.124    2.8    1167      58470.  1.002  0.999  0.080  0.127  0.059    17.1      77     0     0.0     0.0       0  0.0000
+  0.132    2.8    1226      48157.  1.004  1.000  0.083  0.129  0.058    16.2      83     0     0.0     0.0       0  0.0000
+  0.140    2.7    1226      40033.  1.006  1.002  0.097  0.150  0.065    17.0      92     0     0.0     0.0       0  0.0000
+  0.148    2.6    1290      37685.  1.006  1.002  0.093  0.139  0.064    15.8      77     0     0.0     0.0       0  0.0000
+  0.156    2.5    2013      31836.  1.004  1.000  0.102  0.156  0.067    16.1      83     0     0.0     0.0       0  0.0000
+ $$
+"><b>For inline graphs use a Java browser</b></applet>
+
+    THE TOTALS   18085.    118706.  1.003  1.000  0.071  0.108  0.059    20.3    171.
+1
+
+
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ SCALEIT:   Normal termination of SCALEIT
+Times: User:       0.1s System:    0.0s Elapsed:     0:01  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: CAD              version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 15:42:27 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- TITLE Split Fodark
+ Data line--- MONITOR BRIEF
+ Data line--- LABIN file 1 E1=FreeR_flag E2=Fodark E3=SIGFodark
+ Data line--- LABOUT file 1 E1=FreeR_flag E2=Fodark E3=SIGFodark
+ Data line--- CTYPIN file 1 E1=I E2=F E3=Q
+ Data line--- RESOLUTION file 1 30.00 1.64
+    Indices output even if all data items flagged "missing"
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z3X-scaled.mtz 
+
+ * Title:
+
+ Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+Reciprocal space symmetry: 
+Space group: "P 21 21 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 19 "P 21 21 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,-k,+l       5  +h,-k,-l       7  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,+k,-l       6  -h,+k,+l       8  +h,-k,+l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [mmm] hkl:h>=0, k>=0, l>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=FreeR_flag E2=Fodark E3=SIGFodark
+ Data line--- LABOUT E1=FreeR_flag E2=Fodark E3=SIGFodark
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   6
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FreeR_flag  E21=Fodark  E31=SIGFodark 
+
+
+ MTZOUT_LABELS are H K L and -
+  FreeR_flag  Fodark  SIGFodark 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=FreeR_flag E2=Fodark E3=SIGFodark
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z3X-scaled.mtz 
+
+ * Title:
+
+ Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of     10 Columns
+ and a total of      63623 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   2
+
+  EPSILON Zone   4
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      63623
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      69851
+
+
+ Total number read for all files    =      63623
+ Total passed to sort for all files =      69851
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     3
+
+ Data line--- LABOUT E11=FreeR_flag E21=Fodark E31=SIGFodark
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: ./input/8Z1J-split.mtz 
+
+ * Title:
+
+ Split Fodark Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark
+
+ * Column Types :
+
+ H H H I F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+
+ Total number from Sorting Routine =      69851
+ Final Total of Unique records to HKLOUT =      63623
+ Final Total of Missing records to HKLOUT =          0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: CAD              version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 15:42:27 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- TITLE Split Fotr
+ Data line--- MONITOR BRIEF
+ Data line--- LABIN file 1 E1=Fotr E2=SIGFotr
+ Data line--- LABOUT file 1 E1=Fotr E2=SIGFotr
+ Data line--- CTYPIN file 1 E1=F E2=Q
+ Data line--- RESOLUTION file 1 30.00 1.64
+    Indices output even if all data items flagged "missing"
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z3X-scaled.mtz 
+
+ * Title:
+
+ Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+Reciprocal space symmetry: 
+Space group: "P 21 21 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 19 "P 21 21 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,-k,+l       5  +h,-k,-l       7  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,+k,-l       6  -h,+k,+l       8  +h,-k,+l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [mmm] hkl:h>=0, k>=0, l>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=Fotr E2=SIGFotr
+ Data line--- LABOUT E1=Fotr E2=SIGFotr
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   5
+ Accumulated Out_Put_MTZ_labels are:
+  E11=Fotr  E21=SIGFotr 
+
+
+ MTZOUT_LABELS are H K L and -
+  Fotr  SIGFotr 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=Fotr E2=SIGFotr
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: ./input/8Z3X-scaled.mtz 
+
+ * Title:
+
+ Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 10
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag Fodark SIGFodark Fcdark PHIcdark Fotr SIGFotr
+
+ * Column Types :
+
+ H H H I F Q F P F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of     10 Columns
+ and a total of      63623 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   2
+
+  EPSILON Zone   4
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      63623
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      69851
+
+
+ Total number read for all files    =      63623
+ Total passed to sort for all files =      69851
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     2
+
+ Data line--- LABOUT E11=Fotr E21=SIGFotr
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: ./input/8Z3X-split.mtz 
+
+ * Title:
+
+ Split Fotr Scale Triggered Structure Factor
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 63623
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L Fotr SIGFotr
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.37180     (     27.751 -      1.640 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+
+ Total number from Sorting Routine =      69851
+ Final Total of Unique records to HKLOUT =      63623
+ Final Total of Missing records to HKLOUT =      13645
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+
+========================== phenix.fobs_minus_fobs_map =========================
+
+Command line arguments: 
+['job_title=Generate dFo Structure Factor', 'f_obs_1_file=./input/8Z3X-split.mtz', 'f_obs_2_file=./input/8Z1J-split.mtz', 'output_file=./input/8Z3X-dFo.mtz', 'f_obs_1_label=Fotr', 'f_obs_2_label=Fodark', 'phase_source=./input/8Z1J.pdb', 'high_res=1.64', 'low_res=30.00', 'sigma_cutoff=3.0']
+
+*** Parameters:
+f_obs_1_file_name = ./input/8Z3X-split.mtz
+f_obs_1_label = Fotr
+f_obs_2_file_name = ./input/8Z1J-split.mtz
+f_obs_2_label = Fodark
+high_resolution = 1.64
+low_resolution = 30.00
+sigma_cutoff = 3.0
+phase_source = ./input/8Z1J.pdb
+scattering_table = wk1995 it1992 *n_gaussian electron neutron
+output_file = ./input/8Z3X-dFo.mtz
+output_dir = None
+file_name_prefix = None
+job_id = None
+ignore_non_isomorphous_unit_cells = False
+job_title = Generate dFo Structure Factor
+advanced {
+  multiscale = False
+  omit_selection = None
+  anomalous = False
+}
+find_peaks_holes = False
+map_cutoff = 3.0
+peak_search {
+  use_sigma_scaled_maps = True
+  resolution_factor = 1./4.
+  map_next_to_model {
+    min_model_peak_dist = 1.8
+    max_model_peak_dist = 6.0
+    min_peak_peak_dist = 1.8
+    use_hydrogens = False
+  }
+  max_number_of_peaks = None
+  peak_search {
+    peak_search_level = 1
+    max_peaks = 0
+    interpolate = True
+    min_distance_sym_equiv = None
+    general_positions_only = False
+    min_cross_distance = 1.8
+    min_cubicle_edge = 5
+  }
+}
+
+*** Summary for data set 0:
+Miller array info: input/8Z3X-split.mtz:Fotr,SIGFotr,systematic_absences_eliminated
+Observation type: xray.amplitude
+Type of data: double, size=49978
+Type of sigmas: double, size=49978
+Number of Miller indices: 49978
+Anomalous flag: False
+Unit cell: (50.84, 65.6, 153.13, 90, 90, 90)
+Space group: P 21 21 21 (No. 19)
+Systematic absences: 0
+Centric reflections: 5155
+Resolution range: 27.7507 1.78001
+Completeness in resolution range: 0.99998
+Completeness with d_max=infinity: 0.99964
+Wavelength: 1.2400
+
+*** Summary for data set 1:
+Miller array info: input/8Z1J-split.mtz:Fodark,SIGFodark,systematic_absences_eliminated
+Observation type: xray.amplitude
+Type of data: double, size=63622
+Type of sigmas: double, size=63622
+Number of Miller indices: 63622
+Anomalous flag: False
+Unit cell: (50.84, 65.6, 153.13, 90, 90, 90)
+Space group: P 21 21 21 (No. 19)
+Systematic absences: 0
+Centric reflections: 6071
+Resolution range: 27.7507 1.64
+Completeness in resolution range: 0.999984
+Completeness with d_max=infinity: 0.999717
+Wavelength: 1.2400
+
+*** Model summary:
+Number of scatterers: 8297
+At special positions: 0
+Unit cell: (50.84, 65.6, 153.13, 90, 90, 90)
+Space group: P 21 21 21 (No. 19)
+
+Data set: 0
+|--(resolution: 1.78 - 27.75 A, n_refl.=37629 (all), 100.00% free)------------|
+|                                                                             |
+| r_work= 0.1447 r_free= 0.1447 coordinate error (max.-lik. estimate): 0.12 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.026044                   |
+| target function (ls_wunit_k1) not normalized (work): 980.013979             |
+| target function (ls_wunit_k1) not normalized (free):            None        |
+|-----------------------------------------------------------------------------|
+
+Data set: 1
+|--(resolution: 1.64 - 27.75 A, n_refl.=49985 (all), 100.00% free)------------|
+|                                                                             |
+| r_work= 0.1290 r_free= 0.1290 coordinate error (max.-lik. estimate): 0.13 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.020951                   |
+| target function (ls_wunit_k1) not normalized (work): 1047.256134            |
+| target function (ls_wunit_k1) not normalized (free):            None        |
+|-----------------------------------------------------------------------------|
+
+
+Fobs1_vs_Fobs2 statistics:
+Bin# Resolution range  Compl.  No.of refl. CC   R-factor
+  1: 27.7541 -  7.3928   0.73    763         0.993  0.0454
+  2:  7.3928 -  5.8862   0.73    695         0.990  0.0518
+  3:  5.8862 -  5.1476   0.73    670         0.990  0.0532
+  4:  5.1476 -  4.6794   0.73    683         0.990  0.0549
+  5:  4.6794 -  4.3453   0.73    695         0.989  0.0567
+  6:  4.3453 -  4.0900   0.73    699         0.988  0.0557
+  7:  4.0900 -  3.8857   0.73    669         0.987  0.0615
+  8:  3.8857 -  3.7170   0.73    681         0.988  0.0590
+  9:  3.7170 -  3.5742   0.73    668         0.988  0.0608
+ 10:  3.5742 -  3.4511   0.73    649         0.985  0.0646
+ 11:  3.4511 -  3.3434   0.73    692         0.986  0.0660
+ 12:  3.3434 -  3.2480   0.73    648         0.987  0.0644
+ 13:  3.2480 -  3.1626   0.73    653         0.979  0.0745
+ 14:  3.1626 -  3.0855   0.73    654         0.981  0.0905
+ 15:  3.0855 -  3.0155   0.73    631         0.978  0.0822
+ 16:  3.0155 -  2.9514   0.73    639         0.982  0.0740
+ 17:  2.9514 -  2.8924   0.73    651         0.982  0.0762
+ 18:  2.8924 -  2.8379   0.73    623         0.981  0.0727
+ 19:  2.8379 -  2.7872   0.73    619         0.976  0.0741
+ 20:  2.7872 -  2.7400   0.73    615         0.979  0.0811
+ 21:  2.7400 -  2.6959   0.73    624         0.973  0.0896
+ 22:  2.6959 -  2.6544   0.73    601         0.975  0.0821
+ 23:  2.6544 -  2.6154   0.73    614         0.973  0.0882
+ 24:  2.6154 -  2.5786   0.73    596         0.971  0.0900
+ 25:  2.5786 -  2.5438   0.73    583         0.960  0.1063
+ 26:  2.5438 -  2.5108   0.73    571         0.968  0.1103
+ 27:  2.5108 -  2.4794   0.73    616         0.966  0.1145
+ 28:  2.4794 -  2.4495   0.73    545         0.962  0.1142
+ 29:  2.4495 -  2.4211   0.73    561         0.947  0.1119
+ 30:  2.4211 -  2.3939   0.73    604         0.964  0.0950
+ 31:  2.3939 -  2.3679   0.73    542         0.945  0.1086
+ 32:  2.3679 -  2.3430   0.73    562         0.951  0.1124
+ 33:  2.3430 -  2.3191   0.73    522         0.956  0.1050
+ 34:  2.3191 -  2.2961   0.73    554         0.950  0.1107
+ 35:  2.2961 -  2.2741   0.73    545         0.953  0.1108
+ 36:  2.2741 -  2.2528   0.73    532         0.947  0.1089
+ 37:  2.2528 -  2.2323   0.73    518         0.939  0.1161
+ 38:  2.2323 -  2.2126   0.73    526         0.935  0.1129
+ 39:  2.2126 -  2.1935   0.73    527         0.946  0.1089
+ 40:  2.1935 -  2.1751   0.73    548         0.938  0.1129
+ 41:  2.1751 -  2.1573   0.73    504         0.936  0.1097
+ 42:  2.1573 -  2.1400   0.73    502         0.923  0.1179
+ 43:  2.1400 -  2.1233   0.73    479         0.929  0.1197
+ 44:  2.1233 -  2.1071   0.73    500         0.919  0.1300
+ 45:  2.1071 -  2.0914   0.73    475         0.935  0.1126
+ 46:  2.0914 -  2.0761   0.73    461         0.913  0.1239
+ 47:  2.0761 -  2.0613   0.73    488         0.909  0.1286
+ 48:  2.0613 -  2.0469   0.73    449         0.895  0.1596
+ 49:  2.0469 -  2.0329   0.73    433         0.908  0.1604
+ 50:  2.0329 -  2.0192   0.73    444         0.897  0.1591
+ 51:  2.0192 -  2.0060   0.73    480         0.902  0.1621
+ 52:  2.0060 -  1.9930   0.73    404         0.888  0.1660
+ 53:  1.9930 -  1.9804   0.73    394         0.886  0.1653
+ 54:  1.9804 -  1.9681   0.73    419         0.875  0.1759
+ 55:  1.9681 -  1.9561   0.73    368         0.875  0.1769
+ 56:  1.9561 -  1.9444   0.73    378         0.862  0.1850
+ 57:  1.9444 -  1.9330   0.73    362         0.805  0.1706
+ 58:  1.9330 -  1.9218   0.73    358         0.867  0.1609
+ 59:  1.9218 -  1.9109   0.73    372         0.838  0.1747
+ 60:  1.9109 -  1.9002   0.73    311         0.868  0.1606
+ 61:  1.9002 -  1.8898   0.73    326         0.849  0.1568
+ 62:  1.8898 -  1.8796   0.73    321         0.789  0.1583
+ 63:  1.8796 -  1.8696   0.73    311         0.831  0.1604
+ 64:  1.8696 -  1.8598   0.73    286         0.824  0.1594
+ 65:  1.8598 -  1.8502   0.73    290         0.827  0.1567
+ 66:  1.8502 -  1.8408   0.73    249         0.775  0.1690
+ 67:  1.8408 -  1.8316   0.73    241         0.837  0.1498
+ 68:  1.8316 -  1.8226   0.73    275         0.783  0.1629
+ 69:  1.8226 -  1.8138   0.73    232         0.773  0.1655
+ 70:  1.8138 -  1.8051   0.73    225         0.751  0.1755
+ 71:  1.8051 -  1.7966   0.73    270         0.769  0.1782
+ 72:  1.7966 -  1.7882   0.73    230         0.790  0.1724
+ 73:  1.7882 -  1.7800   0.73    202         0.731  0.1635

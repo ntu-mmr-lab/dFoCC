@@ -1,0 +1,1181 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: FFTBIG           version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- RESOLUTION 30.0 1.64
+ Data line---                 LABIN F1=FoFo PHI=PHFc
+ Data line---                 GRID SAMPLE 3
+ Data line---                 END
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: ./input/8Z3X-dFo.mtz 
+
+ * Title:
+
+ None
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 project
+          crystal
+          dataset
+             50.8400   65.6000  153.1300   90.0000   90.0000   90.0000
+             1.00000
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 36627
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ > column label FoFo = phenix FoFoPHFc                                           
+ file name ./input/8Z3X-dFo.mtz                                                  
+
+ * Column Labels :
+
+ H K L FoFo PHFc
+
+ * Column Types :
+
+ H H H F P
+
+ * Associated datasets :
+
+ 0 0 0 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   50.8400   65.6000  153.1300   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00130    0.31561     (     27.751 -      1.780 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P212121' (number     19)
+
+ Map cell is set to:   50.84   65.60  153.13   90.00   90.00   90.00
+  FREE column NOT assigned
+
+
+ Coefficients used for Fourier calculation:-
+ *******************************************
+
+
+ Fourier synthesis: ( k1 * F1) exp( i PHI)
+
+    F1   =  FoFo
+    PHI  =  PHFc                          
+
+
+
+ Resolution limits:     30.00     1.64
+ Scale & B for F1 :    1.00000  0.00000
+
+ *  F used = Scale * exp(- B * (sin theta/lambda)**2);  ** Scale and B applied to F BEFORE squaring for Patterson  **
+
+
+ *** No reflections excluded ***
+
+
+
+
+ Number of symmetry operations = 4 Space-group for FFT =   1  True space-group =  19 List terms gt     0
+
+ Axis order in map: fast=Y,  medium= X,  slow(section)= Z
+
+
+ ** The limits of the map have been set to those of
+ the unit cell:
+
+    Min X   Max X   Min Y   Max Y   Min Z   Max Z
+    0.000   1.000   0.000   1.000   0.000   1.000
+
+ (expressed in fractional coordinates and with x,y,z
+  referring to the unpermutated axes.)
+
+
+ Permutation of axes: (program=input)  x= X,  y= Z,  z= Y
+
+ Before permutation :
+           Maximum indices hkl ...................   31   40   93
+           Sampling intervals on xyz .............   96  120  280
+           Map limits in grid points on xyz ......    0   95       0  119       0  279
+
+ Binary map will be written to stream   1
+
+ Data is assumed to be unsorted
+ After permutation :
+           Maximum indices hkl ...................   31   93   40
+           Sampling intervals on xyz .............   96  280  120
+           Map limits in grid points on xyz ......    0   95       0  279       0  119
+
+
+
+
+
+
+                              Fourier synthesis for space-group P1
+
+  Buffer size =     3279360
+
+
+
+  ****  Largest F Value *** Reflection   0  0 32         193.35
+
+                                         Mean F           18.05
+
+     146508 Structure factors used out of 36627 on the input file
+
+ Logical Name: MAPOUT   Filename: prepare/8Z3X-dFo.map 
+
+File name for output map file on unit   1 : prepare/8Z3X-dFo.map
+logical name MAPOUT
+
+ F000 =    0.000E+00          V =    5.107E+05
+
+ Section axis is Z
+
+ Binary output has Y running fastest, X next
+  Section Z =   0 minimum rho =        -0.0685 at X =   1 Y =  76 maximum rho =         0.0872 at X =  26 Y =  34
+  Section Z =   1 minimum rho =        -0.0834 at X =   8 Y =  49 maximum rho =         0.0905 at X =  52 Y =   7
+  Section Z =   2 minimum rho =        -0.0834 at X =   8 Y =  48 maximum rho =         0.0814 at X =  52 Y =   7
+  Section Z =   3 minimum rho =        -0.0861 at X =  28 Y = 118 maximum rho =         0.0757 at X =  13 Y = 112
+  Section Z =   4 minimum rho =        -0.0769 at X =  71 Y = 114 maximum rho =         0.0829 at X =  86 Y =  72
+  Section Z =   5 minimum rho =        -0.0833 at X =  68 Y =  91 maximum rho =         0.0786 at X =  83 Y =  62
+  Section Z =   6 minimum rho =        -0.1011 at X =  30 Y =  38 maximum rho =         0.0989 at X =  83 Y =  62
+  Section Z =   7 minimum rho =        -0.0936 at X =  36 Y = 104 maximum rho =         0.0944 at X =  78 Y =   9
+  Section Z =   8 minimum rho =        -0.0878 at X =  71 Y =  28 maximum rho =         0.0918 at X =  26 Y =  22
+  Section Z =   9 minimum rho =        -0.0845 at X =  92 Y =  52 maximum rho =         0.0779 at X =  26 Y =  22
+  Section Z =  10 minimum rho =        -0.0786 at X =  56 Y =  35 maximum rho =         0.0832 at X =   4 Y =  60
+  Section Z =  11 minimum rho =        -0.0918 at X =  95 Y =  62 maximum rho =         0.0850 at X =   8 Y =  91
+  Section Z =  12 minimum rho =        -0.0903 at X =  85 Y =  66 maximum rho =         0.0821 at X =   0 Y =  76
+  Section Z =  13 minimum rho =        -0.0750 at X =   5 Y =  54 maximum rho =         0.0881 at X =   0 Y =  76
+  Section Z =  14 minimum rho =        -0.0893 at X =   5 Y =  54 maximum rho =         0.0843 at X =  20 Y =  45
+  Section Z =  15 minimum rho =        -0.0926 at X =  60 Y =  21 maximum rho =         0.0965 at X =  86 Y =  63
+  Section Z =  16 minimum rho =        -0.0748 at X =  60 Y =  83 maximum rho =         0.0768 at X =  92 Y =  71
+  Section Z =  17 minimum rho =        -0.0764 at X =  89 Y =  77 maximum rho =         0.0851 at X =  74 Y = 107
+  Section Z =  18 minimum rho =        -0.0754 at X =  31 Y =  71 maximum rho =         0.0942 at X =  83 Y =  81
+  Section Z =  19 minimum rho =        -0.0887 at X =  80 Y =  89 maximum rho =         0.1089 at X =  92 Y =  52
+  Section Z =  20 minimum rho =        -0.0975 at X =  85 Y =  75 maximum rho =         0.1118 at X =  74 Y =  86
+  Section Z =  21 minimum rho =        -0.1163 at X =  93 Y =  78 maximum rho =         0.1131 at X =  15 Y =  96
+  Section Z =  22 minimum rho =        -0.1002 at X =  36 Y =  49 maximum rho =         0.1096 at X =  15 Y =  97
+  Section Z =  23 minimum rho =        -0.0843 at X =  76 Y = 105 maximum rho =         0.0850 at X =  57 Y =  29
+  Section Z =  24 minimum rho =        -0.1214 at X =  91 Y =  90 maximum rho =         0.0907 at X =   7 Y =  46
+  Section Z =  25 minimum rho =        -0.0934 at X =  91 Y =  90 maximum rho =         0.0869 at X =   8 Y =  45
+  Section Z =  26 minimum rho =        -0.0893 at X =  78 Y =  18 maximum rho =         0.0871 at X =  30 Y =   4
+  Section Z =  27 minimum rho =        -0.1037 at X =  85 Y =  61 maximum rho =         0.0803 at X =  11 Y =  93
+  Section Z =  28 minimum rho =        -0.0900 at X =  64 Y =  83 maximum rho =         0.0902 at X =  77 Y =  32
+  Section Z =  29 minimum rho =        -0.0846 at X =  36 Y =  98 maximum rho =         0.0914 at X =  79 Y =  70
+  Section Z =  30 minimum rho =        -0.1003 at X =  64 Y =  50 maximum rho =         0.0943 at X =  11 Y =  37
+  Section Z =  31 minimum rho =        -0.1166 at X =  65 Y =  50 maximum rho =         0.0872 at X =  59 Y =  89
+  Section Z =  32 minimum rho =        -0.1104 at X =  65 Y =  50 maximum rho =         0.1302 at X =  72 Y =  70
+  Section Z =  33 minimum rho =        -0.1050 at X =  26 Y =  79 maximum rho =         0.1199 at X =  72 Y =  70
+  Section Z =  34 minimum rho =        -0.0942 at X =  26 Y =  79 maximum rho =         0.0994 at X =  86 Y =  83
+  Section Z =  35 minimum rho =        -0.0818 at X =  84 Y =  75 maximum rho =         0.1089 at X =  61 Y =  75
+  Section Z =  36 minimum rho =        -0.0993 at X =  66 Y =  89 maximum rho =         0.0935 at X =  61 Y =  76
+  Section Z =  37 minimum rho =        -0.1121 at X =  66 Y =  89 maximum rho =         0.0945 at X =  89 Y =  89
+  Section Z =  38 minimum rho =        -0.1340 at X =  74 Y =  68 maximum rho =         0.1191 at X =  84 Y =  74
+  Section Z =  39 minimum rho =        -0.1088 at X =  74 Y =  69 maximum rho =         0.1012 at X =  88 Y =  77
+  Section Z =  40 minimum rho =        -0.0989 at X =  22 Y =  50 maximum rho =         0.1011 at X =  88 Y =  77
+  Section Z =  41 minimum rho =        -0.0953 at X =  82 Y =  67 maximum rho =         0.1163 at X =  95 Y = 102
+  Section Z =  42 minimum rho =        -0.0934 at X =   6 Y =  96 maximum rho =         0.1284 at X =  68 Y =  64
+  Section Z =  43 minimum rho =        -0.1190 at X =  87 Y =  99 maximum rho =         0.1310 at X =  68 Y =  64
+  Section Z =  44 minimum rho =        -0.1105 at X =  61 Y =  67 maximum rho =         0.1070 at X =  77 Y =  27
+  Section Z =  45 minimum rho =        -0.1307 at X =  68 Y =  69 maximum rho =         0.1100 at X =  75 Y =  76
+  Section Z =  46 minimum rho =        -0.1492 at X =  68 Y =  68 maximum rho =         0.1573 at X =  69 Y =  75
+  Section Z =  47 minimum rho =        -0.1372 at X =  25 Y =  29 maximum rho =         0.1696 at X =  70 Y =  76
+  Section Z =  48 minimum rho =        -0.1753 at X =  66 Y =  74 maximum rho =         0.1332 at X =  64 Y =  70
+  Section Z =  49 minimum rho =        -0.1489 at X =  38 Y =  27 maximum rho =         0.1056 at X =  65 Y =  68
+  Section Z =  50 minimum rho =        -0.1874 at X =  69 Y =  77 maximum rho =         0.1342 at X =  66 Y =  68
+  Section Z =  51 minimum rho =        -0.1475 at X =  69 Y =  77 maximum rho =         0.1150 at X =  43 Y =  23
+  Section Z =  52 minimum rho =        -0.1267 at X =  69 Y =  68 maximum rho =         0.1584 at X =  43 Y =  23
+  Section Z =  53 minimum rho =        -0.1463 at X =  43 Y =  28 maximum rho =         0.1952 at X =  44 Y =  22
+  Section Z =  54 minimum rho =        -0.2484 at X =  43 Y =  28 maximum rho =         0.2042 at X =  44 Y =  22
+  Section Z =  55 minimum rho =        -0.2928 at X =  42 Y =  27 maximum rho =         0.1834 at X =  45 Y =  22
+  Section Z =  56 minimum rho =        -0.2633 at X =  42 Y =  27 maximum rho =         0.1597 at X =  68 Y =  65
+  Section Z =  57 minimum rho =        -0.2024 at X =  41 Y =  27 maximum rho =         0.1471 at X =  67 Y =  64
+  Section Z =  58 minimum rho =        -0.1108 at X =  40 Y =  25 maximum rho =         0.1197 at X =  42 Y =  21
+  Section Z =  59 minimum rho =        -0.0921 at X =  32 Y = 105 maximum rho =         0.1062 at X =  47 Y =  36
+  Section Z =  60 minimum rho =        -0.1024 at X =  67 Y =  61 maximum rho =         0.1339 at X =  48 Y =  36
+  Section Z =  61 minimum rho =        -0.1130 at X =  67 Y =  61 maximum rho =         0.1519 at X =  48 Y =  35
+  Section Z =  62 minimum rho =        -0.1146 at X =  68 Y =  60 maximum rho =         0.1419 at X =  48 Y =  35
+  Section Z =  63 minimum rho =        -0.1112 at X =  43 Y =  25 maximum rho =         0.0861 at X =  48 Y =  35
+  Section Z =  64 minimum rho =        -0.0940 at X =  25 Y =  44 maximum rho =         0.1031 at X =  51 Y =  33
+  Section Z =  65 minimum rho =        -0.0937 at X =  25 Y =  44 maximum rho =         0.1053 at X =  51 Y =  32
+  Section Z =  66 minimum rho =        -0.1041 at X =  38 Y = 106 maximum rho =         0.1007 at X =  71 Y = 102
+  Section Z =  67 minimum rho =        -0.0844 at X =  74 Y = 113 maximum rho =         0.0921 at X =  73 Y =  74
+  Section Z =  68 minimum rho =        -0.0852 at X =  90 Y =  17 maximum rho =         0.0939 at X =  73 Y =  74
+  Section Z =  69 minimum rho =        -0.0885 at X =  90 Y =  17 maximum rho =         0.0798 at X =  69 Y =  98
+  Section Z =  70 minimum rho =        -0.0762 at X =   7 Y =  33 maximum rho =         0.0897 at X =  27 Y =  33
+  Section Z =  71 minimum rho =        -0.0885 at X =   6 Y =  77 maximum rho =         0.0798 at X =  27 Y =  38
+  Section Z =  72 minimum rho =        -0.0852 at X =   6 Y =  77 maximum rho =         0.0939 at X =  23 Y =  14
+  Section Z =  73 minimum rho =        -0.0844 at X =  22 Y =  53 maximum rho =         0.0921 at X =  23 Y =  14
+  Section Z =  74 minimum rho =        -0.1041 at X =  58 Y =  46 maximum rho =         0.1007 at X =  25 Y =  42
+  Section Z =  75 minimum rho =        -0.0937 at X =  71 Y = 104 maximum rho =         0.1053 at X =  45 Y =  92
+  Section Z =  76 minimum rho =        -0.0940 at X =  71 Y = 104 maximum rho =         0.1031 at X =  45 Y =  93
+  Section Z =  77 minimum rho =        -0.1112 at X =  53 Y =  85 maximum rho =         0.0861 at X =  48 Y =  95
+  Section Z =  78 minimum rho =        -0.1146 at X =  28 Y =   0 maximum rho =         0.1419 at X =  48 Y =  95
+  Section Z =  79 minimum rho =        -0.1130 at X =  29 Y =   1 maximum rho =         0.1519 at X =  48 Y =  95
+  Section Z =  80 minimum rho =        -0.1024 at X =  29 Y =   1 maximum rho =         0.1339 at X =  48 Y =  96
+  Section Z =  81 minimum rho =        -0.0921 at X =  64 Y =  45 maximum rho =         0.1062 at X =  49 Y =  96
+  Section Z =  82 minimum rho =        -0.1108 at X =  56 Y =  85 maximum rho =         0.1197 at X =  54 Y =  81
+  Section Z =  83 minimum rho =        -0.2024 at X =  55 Y =  87 maximum rho =         0.1471 at X =  29 Y =   4
+  Section Z =  84 minimum rho =        -0.2633 at X =  54 Y =  87 maximum rho =         0.1597 at X =  28 Y =   5
+  Section Z =  85 minimum rho =        -0.2928 at X =  54 Y =  87 maximum rho =         0.1834 at X =  51 Y =  82
+  Section Z =  86 minimum rho =        -0.2484 at X =  53 Y =  88 maximum rho =         0.2042 at X =  52 Y =  82
+  Section Z =  87 minimum rho =        -0.1463 at X =  53 Y =  88 maximum rho =         0.1952 at X =  52 Y =  82
+  Section Z =  88 minimum rho =        -0.1267 at X =  27 Y =   8 maximum rho =         0.1584 at X =  53 Y =  83
+  Section Z =  89 minimum rho =        -0.1475 at X =  27 Y =  17 maximum rho =         0.1150 at X =  53 Y =  83
+  Section Z =  90 minimum rho =        -0.1874 at X =  27 Y =  17 maximum rho =         0.1342 at X =  30 Y =   8
+  Section Z =  91 minimum rho =        -0.1489 at X =  58 Y =  87 maximum rho =         0.1056 at X =  31 Y =   8
+  Section Z =  92 minimum rho =        -0.1753 at X =  30 Y =  14 maximum rho =         0.1332 at X =  32 Y =  10
+  Section Z =  93 minimum rho =        -0.1372 at X =  71 Y =  89 maximum rho =         0.1696 at X =  26 Y =  16
+  Section Z =  94 minimum rho =        -0.1492 at X =  28 Y =   8 maximum rho =         0.1573 at X =  27 Y =  15
+  Section Z =  95 minimum rho =        -0.1307 at X =  28 Y =   9 maximum rho =         0.1100 at X =  21 Y =  16
+  Section Z =  96 minimum rho =        -0.1105 at X =  35 Y =   7 maximum rho =         0.1070 at X =  19 Y =  87
+  Section Z =  97 minimum rho =        -0.1190 at X =   9 Y =  39 maximum rho =         0.1310 at X =  28 Y =   4
+  Section Z =  98 minimum rho =        -0.0934 at X =  90 Y =  36 maximum rho =         0.1284 at X =  28 Y =   4
+  Section Z =  99 minimum rho =        -0.0953 at X =  14 Y =   7 maximum rho =         0.1163 at X =   1 Y =  42
+  Section Z = 100 minimum rho =        -0.0989 at X =  74 Y = 110 maximum rho =         0.1011 at X =   8 Y =  17
+  Section Z = 101 minimum rho =        -0.1088 at X =  22 Y =   9 maximum rho =         0.1012 at X =   8 Y =  17
+  Section Z = 102 minimum rho =        -0.1340 at X =  22 Y =   8 maximum rho =         0.1191 at X =  12 Y =  14
+  Section Z = 103 minimum rho =        -0.1121 at X =  30 Y =  29 maximum rho =         0.0945 at X =   7 Y =  29
+  Section Z = 104 minimum rho =        -0.0993 at X =  30 Y =  29 maximum rho =         0.0935 at X =  35 Y =  16
+  Section Z = 105 minimum rho =        -0.0818 at X =  12 Y =  15 maximum rho =         0.1089 at X =  35 Y =  15
+  Section Z = 106 minimum rho =        -0.0942 at X =  70 Y =  19 maximum rho =         0.0994 at X =  10 Y =  23
+  Section Z = 107 minimum rho =        -0.1050 at X =  70 Y =  19 maximum rho =         0.1199 at X =  24 Y =  10
+  Section Z = 108 minimum rho =        -0.1104 at X =  31 Y = 110 maximum rho =         0.1302 at X =  24 Y =  10
+  Section Z = 109 minimum rho =        -0.1166 at X =  31 Y = 110 maximum rho =         0.0872 at X =  37 Y =  29
+  Section Z = 110 minimum rho =        -0.1003 at X =  32 Y = 110 maximum rho =         0.0943 at X =  85 Y =  97
+  Section Z = 111 minimum rho =        -0.0846 at X =  60 Y =  38 maximum rho =         0.0914 at X =  17 Y =  10
+  Section Z = 112 minimum rho =        -0.0900 at X =  32 Y =  23 maximum rho =         0.0902 at X =  19 Y =  92
+  Section Z = 113 minimum rho =        -0.1037 at X =  11 Y =   1 maximum rho =         0.0803 at X =  85 Y =  33
+  Section Z = 114 minimum rho =        -0.0893 at X =  18 Y =  78 maximum rho =         0.0871 at X =  66 Y =  64
+  Section Z = 115 minimum rho =        -0.0934 at X =   5 Y =  30 maximum rho =         0.0869 at X =  88 Y = 105
+  Section Z = 116 minimum rho =        -0.1214 at X =   5 Y =  30 maximum rho =         0.0907 at X =  89 Y = 106
+  Section Z = 117 minimum rho =        -0.0843 at X =  20 Y =  45 maximum rho =         0.0850 at X =  39 Y =  89
+  Section Z = 118 minimum rho =        -0.1002 at X =  60 Y = 109 maximum rho =         0.1096 at X =  81 Y =  37
+  Section Z = 119 minimum rho =        -0.1163 at X =   3 Y =  18 maximum rho =         0.1131 at X =  81 Y =  36
+  Section Z = 120 minimum rho =        -0.0975 at X =  11 Y =  15 maximum rho =         0.1118 at X =  22 Y =  26
+  Section Z = 121 minimum rho =        -0.0887 at X =  16 Y =  29 maximum rho =         0.1089 at X =   4 Y = 112
+  Section Z = 122 minimum rho =        -0.0754 at X =  65 Y =  11 maximum rho =         0.0942 at X =  13 Y =  21
+  Section Z = 123 minimum rho =        -0.0764 at X =   7 Y =  17 maximum rho =         0.0851 at X =  22 Y =  47
+  Section Z = 124 minimum rho =        -0.0748 at X =  36 Y =  23 maximum rho =         0.0768 at X =   4 Y =  11
+  Section Z = 125 minimum rho =        -0.0926 at X =  36 Y =  81 maximum rho =         0.0965 at X =  10 Y =   3
+  Section Z = 126 minimum rho =        -0.0893 at X =  91 Y = 114 maximum rho =         0.0843 at X =  76 Y = 105
+  Section Z = 127 minimum rho =        -0.0750 at X =  91 Y = 114 maximum rho =         0.0881 at X =   0 Y =  16
+  Section Z = 128 minimum rho =        -0.0903 at X =  11 Y =   6 maximum rho =         0.0821 at X =   0 Y =  16
+  Section Z = 129 minimum rho =        -0.0918 at X =   1 Y =   2 maximum rho =         0.0850 at X =  88 Y =  31
+  Section Z = 130 minimum rho =        -0.0786 at X =  40 Y =  95 maximum rho =         0.0832 at X =  92 Y =   0
+  Section Z = 131 minimum rho =        -0.0845 at X =   4 Y = 112 maximum rho =         0.0779 at X =  70 Y =  82
+  Section Z = 132 minimum rho =        -0.0878 at X =  25 Y =  88 maximum rho =         0.0918 at X =  70 Y =  82
+  Section Z = 133 minimum rho =        -0.0936 at X =  60 Y =  44 maximum rho =         0.0944 at X =  18 Y =  69
+  Section Z = 134 minimum rho =        -0.1011 at X =  66 Y =  98 maximum rho =         0.0989 at X =  13 Y =   2
+  Section Z = 135 minimum rho =        -0.0833 at X =  28 Y =  31 maximum rho =         0.0786 at X =  13 Y =   2
+  Section Z = 136 minimum rho =        -0.0769 at X =  25 Y =  54 maximum rho =         0.0829 at X =  10 Y =  12
+  Section Z = 137 minimum rho =        -0.0861 at X =  68 Y =  58 maximum rho =         0.0757 at X =  83 Y =  52
+  Section Z = 138 minimum rho =        -0.0834 at X =  88 Y = 108 maximum rho =         0.0814 at X =  44 Y =  67
+  Section Z = 139 minimum rho =        -0.0834 at X =  88 Y = 109 maximum rho =         0.0905 at X =  44 Y =  67
+  Section Z = 140 minimum rho =        -0.0685 at X =  95 Y =  16 maximum rho =         0.0872 at X =  70 Y =  94
+  Section Z = 141 minimum rho =        -0.0834 at X =  40 Y =  71 maximum rho =         0.0905 at X =  92 Y = 113
+  Section Z = 142 minimum rho =        -0.0834 at X =  40 Y =  72 maximum rho =         0.0814 at X =  92 Y = 113
+  Section Z = 143 minimum rho =        -0.0861 at X =  20 Y =   2 maximum rho =         0.0757 at X =  35 Y =   8
+  Section Z = 144 minimum rho =        -0.0769 at X =  73 Y =   6 maximum rho =         0.0829 at X =  58 Y =  48
+  Section Z = 145 minimum rho =        -0.0833 at X =  76 Y =  29 maximum rho =         0.0786 at X =  61 Y =  58
+  Section Z = 146 minimum rho =        -0.1011 at X =  18 Y =  82 maximum rho =         0.0989 at X =  61 Y =  58
+  Section Z = 147 minimum rho =        -0.0936 at X =  12 Y =  16 maximum rho =         0.0944 at X =  66 Y = 111
+  Section Z = 148 minimum rho =        -0.0878 at X =  73 Y =  92 maximum rho =         0.0918 at X =  22 Y =  98
+  Section Z = 149 minimum rho =        -0.0845 at X =  52 Y =  68 maximum rho =         0.0779 at X =  22 Y =  98
+  Section Z = 150 minimum rho =        -0.0786 at X =  88 Y =  85 maximum rho =         0.0832 at X =  44 Y =  60
+  Section Z = 151 minimum rho =        -0.0918 at X =  49 Y =  58 maximum rho =         0.0850 at X =  40 Y =  29
+  Section Z = 152 minimum rho =        -0.0903 at X =  59 Y =  54 maximum rho =         0.0821 at X =  48 Y =  44
+  Section Z = 153 minimum rho =        -0.0750 at X =  43 Y =  66 maximum rho =         0.0881 at X =  48 Y =  44
+  Section Z = 154 minimum rho =        -0.0893 at X =  43 Y =  66 maximum rho =         0.0843 at X =  28 Y =  75
+  Section Z = 155 minimum rho =        -0.0926 at X =  84 Y =  99 maximum rho =         0.0965 at X =  58 Y =  57
+  Section Z = 156 minimum rho =        -0.0748 at X =  84 Y =  37 maximum rho =         0.0768 at X =  52 Y =  49
+  Section Z = 157 minimum rho =        -0.0764 at X =  55 Y =  43 maximum rho =         0.0851 at X =  70 Y =  13
+  Section Z = 158 minimum rho =        -0.0754 at X =  17 Y =  49 maximum rho =         0.0942 at X =  61 Y =  39
+  Section Z = 159 minimum rho =        -0.0887 at X =  64 Y =  31 maximum rho =         0.1089 at X =  52 Y =  68
+  Section Z = 160 minimum rho =        -0.0975 at X =  59 Y =  45 maximum rho =         0.1118 at X =  70 Y =  34
+  Section Z = 161 minimum rho =        -0.1163 at X =  51 Y =  42 maximum rho =         0.1131 at X =  33 Y =  24
+  Section Z = 162 minimum rho =        -0.1002 at X =  12 Y =  71 maximum rho =         0.1096 at X =  33 Y =  23
+  Section Z = 163 minimum rho =        -0.0843 at X =  68 Y =  15 maximum rho =         0.0850 at X =  87 Y =  91
+  Section Z = 164 minimum rho =        -0.1214 at X =  53 Y =  30 maximum rho =         0.0907 at X =  41 Y =  74
+  Section Z = 165 minimum rho =        -0.0934 at X =  53 Y =  30 maximum rho =         0.0869 at X =  40 Y =  75
+  Section Z = 166 minimum rho =        -0.0893 at X =  66 Y = 102 maximum rho =         0.0871 at X =  18 Y = 116
+  Section Z = 167 minimum rho =        -0.1037 at X =  59 Y =  59 maximum rho =         0.0803 at X =  37 Y =  27
+  Section Z = 168 minimum rho =        -0.0900 at X =  80 Y =  37 maximum rho =         0.0902 at X =  67 Y =  88
+  Section Z = 169 minimum rho =        -0.0846 at X =  12 Y =  22 maximum rho =         0.0914 at X =  65 Y =  50
+  Section Z = 170 minimum rho =        -0.1003 at X =  80 Y =  70 maximum rho =         0.0943 at X =  37 Y =  83
+  Section Z = 171 minimum rho =        -0.1166 at X =  79 Y =  70 maximum rho =         0.0872 at X =  85 Y =  31
+  Section Z = 172 minimum rho =        -0.1104 at X =  79 Y =  70 maximum rho =         0.1302 at X =  72 Y =  50
+  Section Z = 173 minimum rho =        -0.1050 at X =  22 Y =  41 maximum rho =         0.1199 at X =  72 Y =  50
+  Section Z = 174 minimum rho =        -0.0942 at X =  22 Y =  41 maximum rho =         0.0994 at X =  58 Y =  37
+  Section Z = 175 minimum rho =        -0.0818 at X =  60 Y =  45 maximum rho =         0.1089 at X =  83 Y =  45
+  Section Z = 176 minimum rho =        -0.0993 at X =  78 Y =  31 maximum rho =         0.0935 at X =  83 Y =  44
+  Section Z = 177 minimum rho =        -0.1121 at X =  78 Y =  31 maximum rho =         0.0945 at X =  55 Y =  31
+  Section Z = 178 minimum rho =        -0.1340 at X =  70 Y =  52 maximum rho =         0.1191 at X =  60 Y =  46
+  Section Z = 179 minimum rho =        -0.1088 at X =  70 Y =  51 maximum rho =         0.1012 at X =  56 Y =  43
+  Section Z = 180 minimum rho =        -0.0989 at X =  26 Y =  70 maximum rho =         0.1011 at X =  56 Y =  43
+  Section Z = 181 minimum rho =        -0.0953 at X =  62 Y =  53 maximum rho =         0.1163 at X =  49 Y =  18
+  Section Z = 182 minimum rho =        -0.0934 at X =  42 Y =  24 maximum rho =         0.1284 at X =  76 Y =  56
+  Section Z = 183 minimum rho =        -0.1190 at X =  57 Y =  21 maximum rho =         0.1310 at X =  76 Y =  56
+  Section Z = 184 minimum rho =        -0.1105 at X =  83 Y =  53 maximum rho =         0.1070 at X =  67 Y =  93
+  Section Z = 185 minimum rho =        -0.1307 at X =  76 Y =  51 maximum rho =         0.1100 at X =  69 Y =  44
+  Section Z = 186 minimum rho =        -0.1492 at X =  76 Y =  52 maximum rho =         0.1573 at X =  75 Y =  45
+  Section Z = 187 minimum rho =        -0.1372 at X =  23 Y =  91 maximum rho =         0.1696 at X =  74 Y =  44
+  Section Z = 188 minimum rho =        -0.1753 at X =  78 Y =  46 maximum rho =         0.1332 at X =  80 Y =  50
+  Section Z = 189 minimum rho =        -0.1489 at X =  10 Y =  93 maximum rho =         0.1056 at X =  79 Y =  52
+  Section Z = 190 minimum rho =        -0.1874 at X =  75 Y =  43 maximum rho =         0.1342 at X =  78 Y =  52
+  Section Z = 191 minimum rho =        -0.1475 at X =  75 Y =  43 maximum rho =         0.1150 at X =   5 Y =  97
+  Section Z = 192 minimum rho =        -0.1267 at X =  75 Y =  52 maximum rho =         0.1584 at X =   5 Y =  97
+  Section Z = 193 minimum rho =        -0.1463 at X =   5 Y =  92 maximum rho =         0.1952 at X =   4 Y =  98
+  Section Z = 194 minimum rho =        -0.2484 at X =   5 Y =  92 maximum rho =         0.2042 at X =   4 Y =  98
+  Section Z = 195 minimum rho =        -0.2928 at X =   6 Y =  93 maximum rho =         0.1834 at X =   3 Y =  98
+  Section Z = 196 minimum rho =        -0.2633 at X =   6 Y =  93 maximum rho =         0.1597 at X =  76 Y =  55
+  Section Z = 197 minimum rho =        -0.2024 at X =   7 Y =  93 maximum rho =         0.1471 at X =  77 Y =  56
+  Section Z = 198 minimum rho =        -0.1108 at X =   8 Y =  95 maximum rho =         0.1197 at X =   6 Y =  99
+  Section Z = 199 minimum rho =        -0.0921 at X =  16 Y =  15 maximum rho =         0.1062 at X =   1 Y =  84
+  Section Z = 200 minimum rho =        -0.1024 at X =  77 Y =  59 maximum rho =         0.1339 at X =   0 Y =  84
+  Section Z = 201 minimum rho =        -0.1130 at X =  77 Y =  59 maximum rho =         0.1519 at X =   0 Y =  85
+  Section Z = 202 minimum rho =        -0.1146 at X =  76 Y =  60 maximum rho =         0.1419 at X =   0 Y =  85
+  Section Z = 203 minimum rho =        -0.1112 at X =   5 Y =  95 maximum rho =         0.0861 at X =   0 Y =  85
+  Section Z = 204 minimum rho =        -0.0940 at X =  23 Y =  76 maximum rho =         0.1031 at X =  93 Y =  87
+  Section Z = 205 minimum rho =        -0.0937 at X =  23 Y =  76 maximum rho =         0.1053 at X =  93 Y =  88
+  Section Z = 206 minimum rho =        -0.1041 at X =  10 Y =  14 maximum rho =         0.1007 at X =  73 Y =  18
+  Section Z = 207 minimum rho =        -0.0844 at X =  70 Y =   7 maximum rho =         0.0921 at X =  71 Y =  46
+  Section Z = 208 minimum rho =        -0.0852 at X =  54 Y = 103 maximum rho =         0.0939 at X =  71 Y =  46
+  Section Z = 209 minimum rho =        -0.0885 at X =  54 Y = 103 maximum rho =         0.0798 at X =  75 Y =  22
+  Section Z = 210 minimum rho =        -0.0762 at X =  41 Y =  87 maximum rho =         0.0897 at X =  21 Y =  87
+  Section Z = 211 minimum rho =        -0.0885 at X =  42 Y =  43 maximum rho =         0.0798 at X =  21 Y =  82
+  Section Z = 212 minimum rho =        -0.0852 at X =  42 Y =  43 maximum rho =         0.0939 at X =  25 Y = 106
+  Section Z = 213 minimum rho =        -0.0844 at X =  26 Y =  67 maximum rho =         0.0921 at X =  25 Y = 106
+  Section Z = 214 minimum rho =        -0.1041 at X =  86 Y =  74 maximum rho =         0.1007 at X =  23 Y =  78
+  Section Z = 215 minimum rho =        -0.0937 at X =  73 Y =  16 maximum rho =         0.1053 at X =   3 Y =  28
+  Section Z = 216 minimum rho =        -0.0940 at X =  73 Y =  16 maximum rho =         0.1031 at X =   3 Y =  27
+  Section Z = 217 minimum rho =        -0.1112 at X =  91 Y =  35 maximum rho =         0.0861 at X =   0 Y =  25
+  Section Z = 218 minimum rho =        -0.1146 at X =  20 Y =   0 maximum rho =         0.1419 at X =   0 Y =  25
+  Section Z = 219 minimum rho =        -0.1130 at X =  19 Y = 119 maximum rho =         0.1519 at X =   0 Y =  25
+  Section Z = 220 minimum rho =        -0.1024 at X =  19 Y = 119 maximum rho =         0.1339 at X =   0 Y =  24
+  Section Z = 221 minimum rho =        -0.0921 at X =  80 Y =  75 maximum rho =         0.1062 at X =  95 Y =  24
+  Section Z = 222 minimum rho =        -0.1108 at X =  88 Y =  35 maximum rho =         0.1197 at X =  90 Y =  39
+  Section Z = 223 minimum rho =        -0.2024 at X =  89 Y =  33 maximum rho =         0.1471 at X =  19 Y = 116
+  Section Z = 224 minimum rho =        -0.2633 at X =  90 Y =  33 maximum rho =         0.1597 at X =  20 Y = 115
+  Section Z = 225 minimum rho =        -0.2928 at X =  90 Y =  33 maximum rho =         0.1834 at X =  93 Y =  38
+  Section Z = 226 minimum rho =        -0.2484 at X =  91 Y =  32 maximum rho =         0.2042 at X =  92 Y =  38
+  Section Z = 227 minimum rho =        -0.1463 at X =  91 Y =  32 maximum rho =         0.1952 at X =  92 Y =  38
+  Section Z = 228 minimum rho =        -0.1267 at X =  21 Y = 112 maximum rho =         0.1584 at X =  91 Y =  37
+  Section Z = 229 minimum rho =        -0.1475 at X =  21 Y = 103 maximum rho =         0.1150 at X =  91 Y =  37
+  Section Z = 230 minimum rho =        -0.1874 at X =  21 Y = 103 maximum rho =         0.1342 at X =  18 Y = 112
+  Section Z = 231 minimum rho =        -0.1489 at X =  86 Y =  33 maximum rho =         0.1056 at X =  17 Y = 112
+  Section Z = 232 minimum rho =        -0.1753 at X =  18 Y = 106 maximum rho =         0.1332 at X =  16 Y = 110
+  Section Z = 233 minimum rho =        -0.1372 at X =  73 Y =  31 maximum rho =         0.1696 at X =  22 Y = 104
+  Section Z = 234 minimum rho =        -0.1492 at X =  20 Y = 112 maximum rho =         0.1573 at X =  21 Y = 105
+  Section Z = 235 minimum rho =        -0.1307 at X =  20 Y = 111 maximum rho =         0.1100 at X =  27 Y = 104
+  Section Z = 236 minimum rho =        -0.1105 at X =  13 Y = 113 maximum rho =         0.1070 at X =  29 Y =  33
+  Section Z = 237 minimum rho =        -0.1190 at X =  39 Y =  81 maximum rho =         0.1310 at X =  20 Y = 116
+  Section Z = 238 minimum rho =        -0.0934 at X =  54 Y =  84 maximum rho =         0.1284 at X =  20 Y = 116
+  Section Z = 239 minimum rho =        -0.0953 at X =  34 Y = 113 maximum rho =         0.1163 at X =  47 Y =  78
+  Section Z = 240 minimum rho =        -0.0989 at X =  70 Y =  10 maximum rho =         0.1011 at X =  40 Y = 103
+  Section Z = 241 minimum rho =        -0.1088 at X =  26 Y = 111 maximum rho =         0.1012 at X =  40 Y = 103
+  Section Z = 242 minimum rho =        -0.1340 at X =  26 Y = 112 maximum rho =         0.1191 at X =  36 Y = 106
+  Section Z = 243 minimum rho =        -0.1121 at X =  18 Y =  91 maximum rho =         0.0945 at X =  41 Y =  91
+  Section Z = 244 minimum rho =        -0.0993 at X =  18 Y =  91 maximum rho =         0.0935 at X =  13 Y = 104
+  Section Z = 245 minimum rho =        -0.0818 at X =  36 Y = 105 maximum rho =         0.1089 at X =  13 Y = 105
+  Section Z = 246 minimum rho =        -0.0942 at X =  74 Y = 101 maximum rho =         0.0994 at X =  38 Y =  97
+  Section Z = 247 minimum rho =        -0.1050 at X =  74 Y = 101 maximum rho =         0.1199 at X =  24 Y = 110
+  Section Z = 248 minimum rho =        -0.1104 at X =  17 Y =  10 maximum rho =         0.1302 at X =  24 Y = 110
+  Section Z = 249 minimum rho =        -0.1166 at X =  17 Y =  10 maximum rho =         0.0872 at X =  11 Y =  91
+  Section Z = 250 minimum rho =        -0.1003 at X =  16 Y =  10 maximum rho =         0.0943 at X =  59 Y =  23
+  Section Z = 251 minimum rho =        -0.0846 at X =  84 Y =  82 maximum rho =         0.0914 at X =  31 Y = 110
+  Section Z = 252 minimum rho =        -0.0900 at X =  16 Y =  97 maximum rho =         0.0902 at X =  29 Y =  28
+  Section Z = 253 minimum rho =        -0.1037 at X =  37 Y = 119 maximum rho =         0.0803 at X =  59 Y =  87
+  Section Z = 254 minimum rho =        -0.0893 at X =  30 Y =  42 maximum rho =         0.0871 at X =  78 Y =  56
+  Section Z = 255 minimum rho =        -0.0934 at X =  43 Y =  90 maximum rho =         0.0869 at X =  56 Y =  15
+  Section Z = 256 minimum rho =        -0.1214 at X =  43 Y =  90 maximum rho =         0.0907 at X =  55 Y =  14
+  Section Z = 257 minimum rho =        -0.0843 at X =  28 Y =  75 maximum rho =         0.0850 at X =   9 Y =  31
+  Section Z = 258 minimum rho =        -0.1002 at X =  84 Y =  11 maximum rho =         0.1096 at X =  63 Y =  83
+  Section Z = 259 minimum rho =        -0.1163 at X =  45 Y = 102 maximum rho =         0.1131 at X =  63 Y =  84
+  Section Z = 260 minimum rho =        -0.0975 at X =  37 Y = 105 maximum rho =         0.1118 at X =  26 Y =  94
+  Section Z = 261 minimum rho =        -0.0887 at X =  32 Y =  91 maximum rho =         0.1089 at X =  44 Y =   8
+  Section Z = 262 minimum rho =        -0.0754 at X =  79 Y = 109 maximum rho =         0.0942 at X =  35 Y =  99
+  Section Z = 263 minimum rho =        -0.0764 at X =  41 Y = 103 maximum rho =         0.0851 at X =  26 Y =  73
+  Section Z = 264 minimum rho =        -0.0748 at X =  12 Y =  97 maximum rho =         0.0768 at X =  44 Y = 109
+  Section Z = 265 minimum rho =        -0.0926 at X =  12 Y =  39 maximum rho =         0.0965 at X =  38 Y = 117
+  Section Z = 266 minimum rho =        -0.0893 at X =  53 Y =   6 maximum rho =         0.0843 at X =  68 Y =  15
+  Section Z = 267 minimum rho =        -0.0750 at X =  53 Y =   6 maximum rho =         0.0881 at X =  48 Y = 104
+  Section Z = 268 minimum rho =        -0.0903 at X =  37 Y = 114 maximum rho =         0.0821 at X =  48 Y = 104
+  Section Z = 269 minimum rho =        -0.0918 at X =  47 Y = 118 maximum rho =         0.0850 at X =  56 Y =  89
+  Section Z = 270 minimum rho =        -0.0786 at X =   8 Y =  25 maximum rho =         0.0832 at X =  52 Y =   0
+  Section Z = 271 minimum rho =        -0.0845 at X =  44 Y =   8 maximum rho =         0.0779 at X =  74 Y =  38
+  Section Z = 272 minimum rho =        -0.0878 at X =  23 Y =  32 maximum rho =         0.0918 at X =  74 Y =  38
+  Section Z = 273 minimum rho =        -0.0936 at X =  84 Y =  76 maximum rho =         0.0944 at X =  30 Y =  51
+  Section Z = 274 minimum rho =        -0.1011 at X =  78 Y =  22 maximum rho =         0.0989 at X =  35 Y = 118
+  Section Z = 275 minimum rho =        -0.0833 at X =  20 Y =  89 maximum rho =         0.0786 at X =  35 Y = 118
+  Section Z = 276 minimum rho =        -0.0769 at X =  23 Y =  66 maximum rho =         0.0829 at X =  38 Y = 108
+  Section Z = 277 minimum rho =        -0.0861 at X =  76 Y =  62 maximum rho =         0.0757 at X =  61 Y =  68
+  Section Z = 278 minimum rho =        -0.0834 at X =  56 Y =  12 maximum rho =         0.0814 at X =   4 Y =  53
+  Section Z = 279 minimum rho =        -0.0834 at X =  56 Y =  11 maximum rho =         0.0905 at X =   4 Y =  53
+
+
+ Overall maximum rho =          0.2042 on section Z =  86 at X =  52 Y =  82
+
+
+ Overall minimum rho =         -0.2928 on section Z = 195 at X =   6 Y =  93
+
+  Average density on this map is         -0.00000000
+
+ Logical Name: MAPOUT   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   1 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPOUT
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ FFTBIG:  Normal termination
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+──────────────────────────────
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: MAPDUMP          version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ Logical Name: MAPIN   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   3 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPIN
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+ Title from map:   Map from fft                                                                   
+ Number of sections    280
+ Fast, medium, slow axes  2  1  3
+ Sampling intervals on xyz   96  120  280
+
+  Symmetry operations:  X,  Y,  Z                                                                       
+  Symmetry operations:  -X+1/2,  -Y,  Z+1/2                                                             
+  Symmetry operations:  X+1/2,  -Y+1/2,  -Z                                                             
+  Symmetry operations:  -X,  Y+1/2,  -Z+1/2                                                             
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ MAPDUMP:   Normal Termination
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+──────────────────────────────
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: mapmask          version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- SYMMETRY 'P 212121'
+ Data line---                 MASK                 CUT 0.0723
+ Data line---                 END
+
+ Logical Name: MAPIN   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   1 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPIN
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+ Unit cell volume:  510704.5
+ Orthogonalisation matrices:
+   50.840  -0.000  -0.000           0.020   0.000   0.000
+    0.000  65.600  -0.000           0.000   0.015   0.000
+    0.000   0.000 153.130           0.000   0.000   0.007
+ Real space metric tensor:      
+    2584.7   4303.4  23448.8     -0.0     -0.0     -0.0
+ Reciprocal space metric tensor:
+  0.000387 0.000232 0.000043 0.000000 0.000000 0.000000
+
+ INPUT  MASK EXTENT
+         0 :   95         0 :  119         0 :  279
+ OUTPUT MASK EXTENT
+         0 :   95         0 :  119         0 :  279
+
+
+ MAP/MASK READ SUCCESSFUL
+
+
+
+ EXTEND COPY  mode
+ Spacegroup symmetry and cell repeat will not be imposed
+ on the map.
+
+
+
+ Logical Name: MSKOUT   Filename: prepare/8Z3X-dFo_above3.0.msk 
+
+File name for output map file on unit   1 : prepare/8Z3X-dFo_above3.0.msk
+logical name MSKOUT
+
+ OUTPUT MASK STATISTICS:
+ Mask contains   3225600 gridpoints,  or  100.0 % of the cell
+      of which      7288 are set filling    0.2 % of the cell
+                                      or    0.2 % of the mask
+
+    Cell ..........  50.84000  65.60000 153.13000  90.00000  90.00000  90.00000
+    Space group ... 19
+    Number of columns, rows, sections ........  120   96  280
+    Start and stop points on cols, rows, secs.    0: 119    0:  95    0: 279
+    Fast, medium, slow axes ..................    Y    X    Z
+    Grid sampling on x, y, z .................   96  120  280
+    Start and stop points on x, y, z .........    0:  95    0: 119    0: 279
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ mapmask:   (mapmask) - normal termination 
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: mapmask          version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- SYMMETRY 'P 212121'
+ Data line---                 MASK                 CUT -0.0723
+ Data line---                 END
+
+ Logical Name: MAPIN   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   1 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPIN
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+ Unit cell volume:  510704.5
+ Orthogonalisation matrices:
+   50.840  -0.000  -0.000           0.020   0.000   0.000
+    0.000  65.600  -0.000           0.000   0.015   0.000
+    0.000   0.000 153.130           0.000   0.000   0.007
+ Real space metric tensor:      
+    2584.7   4303.4  23448.8     -0.0     -0.0     -0.0
+ Reciprocal space metric tensor:
+  0.000387 0.000232 0.000043 0.000000 0.000000 0.000000
+
+ INPUT  MASK EXTENT
+         0 :   95         0 :  119         0 :  279
+ OUTPUT MASK EXTENT
+         0 :   95         0 :  119         0 :  279
+
+
+ MAP/MASK READ SUCCESSFUL
+
+
+
+ EXTEND COPY  mode
+ Spacegroup symmetry and cell repeat will not be imposed
+ on the map.
+
+
+
+ Logical Name: MSKOUT   Filename: prepare/8Z3X-dFo_below3.0.msk 
+
+File name for output map file on unit   1 : prepare/8Z3X-dFo_below3.0.msk
+logical name MSKOUT
+
+ OUTPUT MASK STATISTICS:
+ Mask contains   3225600 gridpoints,  or  100.0 % of the cell
+      of which   3218708 are set filling   99.8 % of the cell
+                                      or   99.8 % of the mask
+
+    Cell ..........  50.84000  65.60000 153.13000  90.00000  90.00000  90.00000
+    Space group ... 19
+    Number of columns, rows, sections ........  120   96  280
+    Start and stop points on cols, rows, secs.    0: 119    0:  95    0: 279
+    Fast, medium, slow axes ..................    Y    X    Z
+    Grid sampling on x, y, z .................   96  120  280
+    Start and stop points on x, y, z .........    0:  95    0: 119    0: 279
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ mapmask:   (mapmask) - normal termination 
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: OVERLAPMAP       version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ Logical Name: MAPIN1   Filename: prepare/8Z3X-dFo_above3.0.msk 
+
+File name for input map file on unit   3 : prepare/8Z3X-dFo_above3.0.msk
+file size 3226944 ; logical name MAPIN1
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    0
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................     0.00000
+           Maximum density .................................     0.00000
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.00000
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+ Logical Name: MAPIN2   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   4 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPIN2
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+
+ Input key words now
+
+
+  EITHER
+ CORRELATE SECTION - to calculate correlation section by section
+
+  OR
+ CORRELATE RESIDUE - to calculate correlation residue by residue
+
+  OR
+ CORRELATE ATOM    - to calculate correlation atom by atom
+
+  OR
+ REAL space R factor - calculated  residue by residue
+ This requires Map1 = FC  
+               Map2 = Fobs ( scaled to FC)
+               Map3 = "Atom map" with residue flag
+
+  OR
+ MAP AVERAGE - average two maps and output new map
+
+
+  OR
+ MAP EXCLUDE - output map2 with points excluded if they  exist in map1 
+ eg output solvent density after masking with FC from  protein coordinates.
+
+
+  OR
+ MAP INCLUDE - output map2 with points included only  if they exist in map1 
+ eg output protein density after masking with FC from protein coordinates.
+
+
+ Data line--- MAP INCLUDE
+ exclude points from output map if they exist in map1
+ Data line---                 END
+
+ Check print - Mode =    -1
+
+
+
+
+ Logical Name: MAPOUT   Filename: prepare/8Z3X-dFo_all_above3.0.map 
+
+File name for output map file on unit  11 : prepare/8Z3X-dFo_all_above3.0.map
+logical name MAPOUT
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ OVERLAPMAP:   Map written 
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: OVERLAPMAP       version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ Logical Name: MAPIN1   Filename: prepare/8Z3X-dFo_below3.0.msk 
+
+File name for input map file on unit   3 : prepare/8Z3X-dFo_below3.0.msk
+file size 3226944 ; logical name MAPIN1
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    0
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................     0.00000
+           Maximum density .................................     0.00000
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.00000
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+ Logical Name: MAPIN2   Filename: prepare/8Z3X-dFo.map 
+
+File name for input map file on unit   4 : prepare/8Z3X-dFo.map
+file size 12903744 ; logical name MAPIN2
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00000
+           Rms deviation from mean density .................     0.02410
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+
+ Input key words now
+
+
+  EITHER
+ CORRELATE SECTION - to calculate correlation section by section
+
+  OR
+ CORRELATE RESIDUE - to calculate correlation residue by residue
+
+  OR
+ CORRELATE ATOM    - to calculate correlation atom by atom
+
+  OR
+ REAL space R factor - calculated  residue by residue
+ This requires Map1 = FC  
+               Map2 = Fobs ( scaled to FC)
+               Map3 = "Atom map" with residue flag
+
+  OR
+ MAP AVERAGE - average two maps and output new map
+
+
+  OR
+ MAP EXCLUDE - output map2 with points excluded if they  exist in map1 
+ eg output solvent density after masking with FC from  protein coordinates.
+
+
+  OR
+ MAP INCLUDE - output map2 with points included only  if they exist in map1 
+ eg output protein density after masking with FC from protein coordinates.
+
+
+ Data line--- MAP EXCLUDE
+ exclude points from output map if they exist in map1
+ Data line---                 END
+
+ Check print - Mode =     1
+
+
+
+
+ Logical Name: MAPOUT   Filename: prepare/8Z3X-dFo_all_below3.0.map 
+
+File name for output map file on unit  11 : prepare/8Z3X-dFo_all_below3.0.map
+logical name MAPOUT
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ OVERLAPMAP:   Map written 
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.017: OVERLAPMAP       version 8.0.017 :         ##
+ ###############################################################
+ User: mifong  Run date:  7/10/2025 Run time: 17:43:07 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ Logical Name: MAPIN1   Filename: prepare/8Z3X-dFo_all_above3.0.map 
+
+File name for input map file on unit   3 : prepare/8Z3X-dFo_all_above3.0.map
+file size 12903744 ; logical name MAPIN1
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................     0.00000
+           Maximum density .................................     0.20422
+           Mean density ....................................     0.00019
+           Rms deviation from mean density .................     0.00418
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+ Logical Name: MAPIN2   Filename: prepare/8Z3X-dFo_all_below3.0.map 
+
+File name for input map file on unit   4 : prepare/8Z3X-dFo_all_below3.0.map
+file size 12903744 ; logical name MAPIN2
+
+
+
+           Number of columns, rows, sections ...............  120   96  280
+           Map mode ........................................    2
+           Start and stop points on columns, rows, sections     0  119    0   95    0  279
+           Grid sampling on x, y, z ........................   96  120  280
+           Cell dimensions .................................   50.8400    65.6000   153.1300    90.0000    90.0000    90.0000
+           Fast, medium, slow axes .........................    Y    X    Z
+           Minimum density .................................    -0.29281
+           Maximum density .................................     0.00000
+           Mean density ....................................    -0.00019
+           Rms deviation from mean density .................     0.00425
+           Space-group .....................................   19
+           Number of titles ................................    1
+
+
+     Labels:                            
+   Map from fft
+
+
+
+
+ Input key words now
+
+
+  EITHER
+ CORRELATE SECTION - to calculate correlation section by section
+
+  OR
+ CORRELATE RESIDUE - to calculate correlation residue by residue
+
+  OR
+ CORRELATE ATOM    - to calculate correlation atom by atom
+
+  OR
+ REAL space R factor - calculated  residue by residue
+ This requires Map1 = FC  
+               Map2 = Fobs ( scaled to FC)
+               Map3 = "Atom map" with residue flag
+
+  OR
+ MAP AVERAGE - average two maps and output new map
+
+
+  OR
+ MAP EXCLUDE - output map2 with points excluded if they  exist in map1 
+ eg output solvent density after masking with FC from  protein coordinates.
+
+
+  OR
+ MAP INCLUDE - output map2 with points included only  if they exist in map1 
+ eg output protein density after masking with FC from protein coordinates.
+
+
+ Data line--- MAP ADD
+  add two maps and output new map
+ Scale for mapin1  1.0 scale for mapin2  1.0
+ Data line---                 END
+
+ Check print - Mode =    -2
+
+
+
+
+ Logical Name: MAPOUT   Filename: prepare/8Z3X-dFo_sigma_cutoff.map 
+
+File name for output map file on unit  11 : prepare/8Z3X-dFo_sigma_cutoff.map
+logical name MAPOUT
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ OVERLAPMAP:   Map written 
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+──────────────────────────────
+Starting phenix.pdb_atom_selection
+on Tue Oct  7 17:43:07 2025 by mifong
+===============================================================================
+
+Processing files:
+-------------------------------------------------------------------------------
+
+  Found model, 2_E384__combined/DEMO_cycle019_rc_0_0_0.pdb
+
+Processing PHIL parameters:
+-------------------------------------------------------------------------------
+
+  Adding command-line PHIL:
+  -------------------------
+    inselection=chain A and ((resseq 395 and not (name N or name CA or name C or name O)))
+
+Final processed PHIL parameters:
+-------------------------------------------------------------------------------
+  data_manager {
+    model {
+      file = "2_E384__combined/DEMO_cycle019_rc_0_0_0.pdb"
+    }
+    default_model = "2_E384__combined/DEMO_cycle019_rc_0_0_0.pdb"
+  }
+  atom_selection_program {
+    inselection = chain A and ((resseq 395 and not (name N or name CA or name \
+                  C or name O)))
+  }
+
+
+Starting job
+===============================================================================
+Validating inputs
+Selecting 'chain A and ((resseq 395 and not (name N or name CA or name C or name O)))'
+  10 atoms selected
+    ATOM   6288  CB  ASN A 395      12.234  -7.150 -26.978  1.00 19.32           C
+    ATOM   6289  CG  ASN A 395      10.909  -7.864 -26.814  1.00 21.70           C
+    ATOM   6290  OD1 ASN A 395      10.809  -9.057 -27.079  1.00 22.65           O
+    ATOM   6291  ND2 ASN A 395       9.901  -7.123 -26.360  1.00 24.26           N
+    ATOM   6292  H   ASN A 395      14.557  -6.568 -27.040  1.00 24.95           H
+    ATOM   6293  HA  ASN A 395      13.332  -8.857 -27.387  1.00 25.66           H
+    ATOM   6294  HB2 ASN A 395      12.562  -6.937 -26.090  1.00 23.21           H
+    ATOM   6295  HB3 ASN A 395      12.064  -6.329 -27.466  1.00 23.21           H
+    ATOM   6296 HD21 ASN A 395       9.125  -7.476 -26.246  1.00 29.14           H
+    ATOM   6297 HD22 ASN A 395      10.024  -6.290 -26.186  1.00 29.14           H
+
+
+===============================================================================
+Job complete
+Total CPU time: 0.38 seconds
+──────────────────────────────

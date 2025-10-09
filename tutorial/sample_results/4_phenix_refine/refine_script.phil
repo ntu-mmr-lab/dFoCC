@@ -1,0 +1,66 @@
+refinement {
+  input {
+    pdb {
+      file_name = "3_N395__combined/DEMO_cycle013_rc_0_0.pdb"
+    }
+    xray_data {
+      file_name = "!!!MODIFY HERE!!!"
+      
+      high_resolution = 1.64
+      low_resolution = 30.0
+      r_free_flags {
+        file_name = "!!!MODIFY HERE!!!"
+        
+        test_flag_value = 0
+      }
+    }
+  }
+  output {
+    prefix = "4_phenix_refine/refined"
+    job_title = "conventional real-space refinement after dFoCC real-space refinement"
+    write_def_file = False
+  }
+  electron_density_maps {
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT"
+      mtz_label_phases = "PH2FOFCWT"
+      fill_missing_f_obs = True
+    }
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT_no_fill"
+      mtz_label_phases = "PH2FOFCWT_no_fill"
+    }
+    map_coefficients {
+      map_type = "mFo-DFc"
+      mtz_label_amplitudes = "FOFCWT"
+      mtz_label_phases = "PHFOFCWT"
+    }
+    map_coefficients {
+      map_type = "anomalous"
+      mtz_label_amplitudes = "ANOM"
+      mtz_label_phases = "PHANOM"
+    }
+  }
+  refine {
+    strategy = *individual_sites individual_sites_real_space *rigid_body \
+               individual_adp group_adp tls occupancies group_anomalous
+    sites {
+      rigid_body = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+      individual = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+      torsion_angles = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+    }
+  }
+  main {
+    number_of_macro_cycles = 5
+    nproc = 28
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  target_weights {
+    optimize_xyz_weight = True
+    optimize_adp_weight = True
+  }
+}
