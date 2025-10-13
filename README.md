@@ -20,10 +20,13 @@
 
 ## Installation
 
-- Clone this repository: `git clone https://github.com/ntu-mmr-lab/dFoCC.git`
+- Install Miniconda according to the instruction in [https://www.anaconda.com/docs/getting-started/miniconda/install](https://www.anaconda.com/docs/getting-started/miniconda/install), or use other Conda distribution
+- Clone this repository: `git clone https://github.com/ntu-mmr-lab/dFoCC.git --depth 1`
+- Go to the cloned directory: `cd dFoCC`
 - Create a conda environment: `conda create -n $env_name -c conda-forge --file requirements.txt`
+  - Replace `$env_name` with any valid name for a Conda environment
   - Remove the environment by `conda remove -n $env-name --all`
-- Make sure that your Python installation in conda is correct (`python -V` should print `3.11.11`)
+- Make sure that your Python installation in Conda is correct (`python -V` should print `3.11.11`)
 
 ## Preparation
 
@@ -51,6 +54,12 @@ gemmi convert 8Z1J.cif $pr0max_dark_model
 ```
 
 ### Step 1: Generate calculated dark-adapted amplitudes and phases (Fcdark and PHIcdark)
+
+> There is a script called `./tutorial/prepare_input.sh` for the preparation of the input files, which is essentially the same as the following few steps.
+>
+> Once the raw MTZ and PDB files are prepared, users may run the script instead.
+>
+> For details, please read <./tutorial/README.md>
 
 Fcdark and PHIcdark will have to be calculated and stored in the same .MTZ file as Fodark. It is recommended using `sfall` within the CCP4 suite (executing the following command or using CCP4i GUI interface) to generate this file from the experimental dark-adapted dataset and its structural model.
 
