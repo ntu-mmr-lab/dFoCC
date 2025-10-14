@@ -23,7 +23,7 @@ The input files inside `./input/` have already been preprocessed, so the prepara
 
 If users would like to test this algorithm with other datasets, they may follow the following step, with the help of the `./prepare_input.sh` script.
 
-<detail>
+<details>
   <summary>Steps to preprocess input files with `./prepare_input.sh`</summary>
 
 ### Step 0: Convert mmCIF model and structure factor files in PDB to .PDB and .MTZ
@@ -52,7 +52,7 @@ gemmi convert 8Z1J.cif $pr0max_dark_model
 The `./prepare_input.sh` script preforms [the 3 steps stated in `../README.md`](../README.md#step-1-generate-calculated-dark-adapted-amplitudes-and-phases-fcdark-and-phicdark) automatically.
 
 Users should modify the input filenames and some parameters in the script before executing it.
-</detail>
+</details>
 
 ### Last Step: Prepare configuration file
 
@@ -68,7 +68,7 @@ Assume that users are still in the `dFoCC/tutorial/` directory.
 
 - Demo Mode
   - Run the whole algorithm only with the initial structure
-  - If `*_log_cycle.csv` exist, modify the initial structure by the parameters specified in it before running the algorithm
+  - If `*_log_cycle.csv` exist, it will modify the initial structure by the parameters specified in it before running the algorithm
   - `python ../iterate_dFoCC.py ./configuration.phil mode=demo`
 - Probe Mode
   - Create the first library of structures to see if the reaction coordinates are suitable
