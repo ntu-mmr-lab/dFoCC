@@ -1,12 +1,11 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --channel conda-forge --file <this file>
-# platform: linux-64
-python=3.11.11=h9e4cc4f_1_cpython
-biopython=1.85=py311h9ecbd09_1
-cctbx=2025.1=py311h38be061_0
-gemmi=0.7.0=py311hbebdadd_0
-matplotlib-base=3.10.0=py311h2b939e6_0
-numpy=1.26.4=py311h24aa872_0
-pandas=2.2.3=py311h7db5c69_1
-scipy=1.14.0=py311h0a5b728_2
-tqdm=4.66.4=py311h92b7b1e_0
+python==3.11.11
+biopython==1.85
+cctbx==2025.1
+gemmi==0.7.0
+matplotlib-base==3.10.0
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.0
+tqdm==4.66.4
