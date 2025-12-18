@@ -1,6 +1,6 @@
 # dFoCC
 
-[![DOI](https://zenodo.org/badge/105618413.svg)](https://doi.org/10.5281/zenodo.16946872)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16946871.svg)](https://doi.org/10.5281/zenodo.16946871)
 
 ## Requirements
 
