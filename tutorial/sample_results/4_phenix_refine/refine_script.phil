@@ -47,9 +47,9 @@ refinement {
     strategy = *individual_sites individual_sites_real_space *rigid_body \
                individual_adp group_adp tls occupancies group_anomalous
     sites {
-      rigid_body = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
-      individual = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
-      torsion_angles = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O))) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+      rigid_body = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O)) or (resseq 321) or (resseq 322 and name N)) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+      individual = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O)) or (resseq 321) or (resseq 322 and name N)) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
+      torsion_angles = not (chain A and ((resseq 309 and not (name N or name CA or name C or name O))) or chain A and ((resseq 321 and not (name N or name CA or name C or name O)) or (resseq 321) or (resseq 322 and name N)) or chain A and ((resseq 384 and not (name N or name CA or name C or name O))) or chain A and ((resseq 395 and not (name N or name CA or name C or name O))))
     }
   }
   main {

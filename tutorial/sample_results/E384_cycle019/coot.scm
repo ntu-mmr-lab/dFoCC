@@ -3,7 +3,7 @@
 (set-nomenclature-errors-on-read "ignore")
 
 ;; load the dark and the calculated light structure
-(read-pdb "./input/8Z1J.pdb")
+(read-pdb "./input/8Z1J-without-H.pdb")
 (read-pdb "E384_cycle019/rc_0_0_0.pdb")
 
 ;; read the dFo region-extracted sigma-cutoff map
@@ -27,6 +27,6 @@
 ;; apply suitable sigma cutoff on it
 ;; and change its colour into cyan-yellow pair
 (make-and-draw-map "E384_cycle019/dFc.rc_0_0_0.mtz" "dFc" "dPHIc" "" 0 1)
-(set-last-map-contour-level-by-sigma 36.00)
+(set-last-map-contour-level-by-sigma 33.00)
 (set-last-map-colour 0.0 1.0 1.0)
 ; (export-map-fragment 3 (rotation-centre-position 0) (rotation-centre-position 1) (rotation-centre-position 2) 20.0 "E384_cycle019/dFc_for_pymol.map")
