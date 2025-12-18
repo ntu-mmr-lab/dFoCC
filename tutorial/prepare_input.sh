@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # input filename
-pr0max_dark_model="./input/8Z1J.pdb"
+pr0max_dark_model_with_H="./input/8Z1J.pdb"
 Fodark_file="./input/8Z1J.mtz"
 Fotr_file="./input/8Z3X.mtz"
 
@@ -30,6 +30,11 @@ echo "If the script fails in the middle, please check the log file: ./input/prep
 {
     # Check if any command returns a non-zero value (fails)
     set -e
+
+    # drop all hydrogen atoms from the initial model
+    # by removing every line with a 'H  ' pattern in the end of the line
+    pr0max_dark_model="${pr0max_dark_model_with_H%.pdb}-without-H.pdb"
+    sed '/H\s\s$/d' $pr0max_dark_model_with_H > $pr0max_dark_model
 
     FoFcdark_file="${Fodark_file%.mtz}-fofc.mtz"
 

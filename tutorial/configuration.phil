@@ -18,6 +18,7 @@ residue {
     }
     initial_parameters_step = 400 400 32 # both "#" and "!" are for comments
     step_per_run = 9 9 5
+    !alt_conf_id = A
 }
 
 residue {
@@ -33,6 +34,7 @@ residue {
             residue_id = 322
             atom_id = CA
         }
+        selection_includes_main_chain = True # includes main chain region for correlation comparison
     }
     initial_parameters_step = 400 400 32
     step_per_run = 9 9 5
@@ -64,7 +66,7 @@ n_jobs = 28
 max_cycle = -1
 
 # `N_VALUE` is 200 divided by the assumed occupancy, and is used to scale the dFc map
-n_value = 12.00
+n_value = 11.00
 
 low_resolution = 30.00
 high_resolution = 1.64
@@ -78,7 +80,7 @@ input {
     pdb {
         # REQUIRED
         # for region selection and the initial structure
-        dark_file_name = ./input/8Z1J.pdb
+        dark_file_name = ./input/8Z1J-without-H.pdb
 
         # optional:
         # the pdb file provided as the initial structure to be modified
@@ -104,11 +106,11 @@ input {
     #     # the extrapolated structure factor file for the conventional refinement
     #     # of the residues that are not refined by dFoCC
     #     # if not specified (set as `None`), the conventional refinement step is skipped
-    #     file_name = None
+    #     !file_name = None
     #
     #     # the column names of `Fext(dark)`, `σ_Fext(dark)`
     #     # these are optional if there is only one pair of F, σ in the file
-    #     !labels = amp-$(n_value)-Fext $(n_value)-nwdSIG
+    #     !labels = amp-11.0-Fext 11.0-nwdSIG
     #     !r_free_flags_label = FREE
     # }
     interrupt_file_name = ./INTERRUPT

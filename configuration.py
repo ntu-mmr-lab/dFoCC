@@ -57,6 +57,8 @@ default_phil = phil.parse("""
                 .type = int
             end.atom_id = N CA C
                 .type = choice
+            selection_includes_main_chain = False
+                .type = bool
         }
         initial_parameters_step = None
             .type = ints(size_min=1, size_max=5, value_min=1)
@@ -366,35 +368,35 @@ def prepare_extraction_selection(refining_residue: Any) -> str:
         selection: str = refining_residue.selection
     else:
         selection = f'(resseq {refining_residue.residue_id} and not (name N or name CA or name C or name O))'
-        # if refining_residue['main_chain_rotation']:
-        #     res_from, res_to = refining_residue['main_chain_rotation']
-        #     match res_from[1]:
-        #         case 'N':
-        #             selection += f' or (resseq {res_from[0]} and not name N)'
-        #         case 'CA':
-        #             selection += f' or (resseq {res_from[0]} and (name C or name O))'
-        #         case 'C':
-        #             pass
-        #         case _:
-        #             assert res_from[1] in ('N', 'CA', 'C'), 'Atom is not in the main chain or is invalid'
-        #     match res_to[0] - res_from[0]:
-        #         case 0:
-        #             raise IndexError(f'Single residue main chain rotation (from {res_from} to {res_to}) is not supported')
-        #         case 1:
-        #             pass
-        #         case 2:
-        #             selection += f' or (resseq {res_from[0]+1})'
-        #         case _:
-        #             selection += f' or (resseq {res_from[0]+1}:{res_to[0]-1})'
-        #     match res_to[1]:
-        #         case 'N':
-        #             pass
-        #         case 'CA':
-        #             selection += f' or (resseq {res_to[0]} and name N)'
-        #         case 'C':
-        #             selection += f' or (resseq {res_from[0]} and not (name C or name O))'
-        #         case _:
-        #             assert res_from[1] in ('N', 'CA', 'C'), 'Atom is not in the main chain or is invalid'
+        if refining_residue.main_chain_rotation and refining_residue.selection_includes_main_chain:
+            res_from, res_to = refining_residue.main_chain_rotation.start, refining_residue.main_chain_rotation.end
+            match res_from.atom_id:
+                case 'N':
+                    selection += f' or (resseq {res_from.residue_id} and not name N)'
+                case 'CA':
+                    selection += f' or (resseq {res_from.residue_id} and (name C or name O))'
+                case 'C':
+                    pass
+                case _:
+                    assert res_from.atom_id in ('N', 'CA', 'C'), 'Atom is not in the main chain or is invalid'
+            match res_to.residue_id - res_from.residue_id:
+                case 0:
+                    raise IndexError(f'Single residue main chain rotation (from {res_from} to {res_to}) is not supported')
+                case 1:
+                    pass
+                case 2:
+                    selection += f' or (resseq {res_from.residue_id+1})'
+                case _:
+                    selection += f' or (resseq {res_from.residue_id+1}:{res_to.residue_id-1})'
+            match res_to.atom_id:
+                case 'N':
+                    pass
+                case 'CA':
+                    selection += f' or (resseq {res_to.residue_id} and name N)'
+                case 'C':
+                    selection += f' or (resseq {res_from.residue_id} and not (name C or name O))'
+                case _:
+                    assert res_from.atom_id in ('N', 'CA', 'C'), 'Atom is not in the main chain or is invalid'
         selection = f'chain {refining_residue.chain_id} and ({selection})'
         if alt_conf_id:
             selection += f' and altloc {alt_conf_id}'
