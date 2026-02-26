@@ -11,8 +11,8 @@ high_resolution=1.64
 symmetry="'P 212121'"
 
 # Check if the three input file exists
-if [[ ! -f $pr0max_dark_model ]] ; then
-    echo "FileNotFoundError: File $pr0max_dark_model not found."
+if [[ ! -f $pr0max_dark_model_with_H ]] ; then
+    echo "FileNotFoundError: File $pr0max_dark_model_with_H not found."
     exit
 fi
 if [[ ! -f $Fodark_file ]] ; then
