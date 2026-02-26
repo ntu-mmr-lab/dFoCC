@@ -34,8 +34,8 @@ residue {
             residue_id = 322
             atom_id = CA
         }
-        selection_includes_main_chain = True # includes main chain region for correlation comparison
     }
+    selection_includes_main_chain = True # includes main chain region for correlation comparison
     initial_parameters_step = 400 400 32
     step_per_run = 9 9 5
 }
