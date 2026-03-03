@@ -57,9 +57,9 @@ default_phil = phil.parse("""
                 .type = int
             end.atom_id = N CA C
                 .type = choice
-            selection_includes_main_chain = False
-                .type = bool
         }
+        selection_includes_main_chain = False
+            .type = bool
         initial_parameters_step = None
             .type = ints(size_min=1, size_max=5, value_min=1)
             .optional = False
