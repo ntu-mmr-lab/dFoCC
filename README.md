@@ -59,7 +59,7 @@ gemmi convert 8Z1J.cif $pr0max_dark_model
 >
 > Once the raw MTZ and PDB files are prepared, users may run the script instead.
 >
-> For details, please read [./tutorial/README.md](./tutorial/README.md)
+> For details, please read [./tutorial/README.md](./tutorial/README.md).
 
 Fcdark and PHIcdark will have to be calculated and stored in the same .MTZ file as Fodark. It is recommended using `sfall` within the CCP4 suite (executing the following command or using CCP4i GUI interface) to generate this file from the experimental dark-adapted dataset and its structural model.
 
@@ -126,7 +126,7 @@ EOF
 
 ### Step 3: Construct observed isomorphous difference structure factor (dFo)
 
-The observed isomorphous difference structure factor (dFo) can be constructed with `phenix.fobs_minus_fobs_map` (isomorphous difference map in Phenix) from the two scaled observed datasets and phased by the dark-state structural model. The resulting .MTZ file contains the difference amplitude dataset (FoFo) and their associated phases (PHFc)
+The observed isomorphous difference structure factor (dFo) can be constructed with `phenix.fobs_minus_fobs_map` (isomorphous difference map in Phenix) from the two scaled observed datasets and phased by the dark-state structural model. The resulting .MTZ file contains the difference amplitude dataset (FoFo) and their associated phases (PHFc).
 
 ```bash
 # Split the dark and the triggered dataset, so that Phenix could read them correctly
@@ -170,7 +170,7 @@ phenix.fobs_minus_fobs_map job_title="Generate dFo Structure Factor" \
 
 ### Step 4: Prepare configuration file
 
-`./configuration.phil` should be modified according to the comments
+`./configuration.phil` should be modified according to the comments.
 
 ## Usage
 
