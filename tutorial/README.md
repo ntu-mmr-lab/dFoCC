@@ -60,15 +60,11 @@ In case the Protein Data Bank drops support for legacy PDB format downloads, use
 gemmi convert 8Z1J.cif $pr0max_dark_model
 ```
 
-<details>
-  <summary>Steps to preprocess input files with `./prepare_input.sh`</summary>
-
 ### Step 1-3: Generate all input files for dFoCC
 
 The `./prepare_input.sh` script preforms [the 3 steps stated in `../README.md`](../README.md#step-1-generate-calculated-dark-adapted-amplitudes-and-phases-fcdark-and-phicdark) automatically.
 
 Users should modify the input filenames and some parameters in the script before executing it.
-</details>
 
 ### Step 4: Prepare configuration file
 
@@ -77,6 +73,14 @@ Users should modify the input filenames and some parameters in the script before
 For tutorial, this has been configured to use the preprocessed input files. However, users might need to tweak the `n_jobs` variable to let the parallel jobs run smoothly.
 
 Also, the `step_per_run` parameters are smaller than the default values, which shrinks the total number of poses generated, so that the executing time would be much shorter than a full run.
+
+### Step 5: Prepare an extrapolated dataset for the final conventional refinement
+
+An extrapolated structure factor file is required for the optional conventional refinement step. This step refines the whole model except for regions that are dealt with by dFoCC main algorithm.
+
+Here, we provided a manually extrapolated (N = 11) structure factor file `./input/nestimation_11.0.mtz`.
+
+To skip this step, comment out the `input.extrapolated_data` block in `configuration.phil`.
 
 ## Usage
 

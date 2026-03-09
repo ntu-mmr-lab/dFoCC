@@ -172,6 +172,12 @@ phenix.fobs_minus_fobs_map job_title="Generate dFo Structure Factor" \
 
 `./configuration.phil` should be modified according to the comments.
 
+### Step 5: Prepare an extrapolated dataset for the final conventional refinement
+
+An extrapolated structure factor file is required for the optional conventional refinement step. This step refines the whole model except for regions that are dealt with by dFoCC main algorithm.
+
+To skip this step, comment out the `input.extrapolated_data` block in `configuration.phil`.
+
 ## Usage
 
 - Demo Mode
