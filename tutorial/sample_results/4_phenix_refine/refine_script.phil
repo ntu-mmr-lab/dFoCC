@@ -1,15 +1,35 @@
+!data_manager {
+  model {
+    file = "3_N395__combined/DEMO_cycle013_rc_0_0.pdb"
+  }
+  miller_array {
+    file = "./input/nestimation_11.0.mtz"
+    labels {
+      
+    }
+  }
+  fmodel {
+    xray_data {
+      high_resolution = 1.64
+      low_resolution = 30.0
+    }
+  }
+}
+!output {
+  prefix = "4_phenix_refine/refined"
+}
 refinement {
   input {
     pdb {
       file_name = "3_N395__combined/DEMO_cycle013_rc_0_0.pdb"
     }
     xray_data {
-      file_name = "!!!MODIFY HERE!!!"
+      file_name = "./input/nestimation_11.0.mtz"
       
       high_resolution = 1.64
       low_resolution = 30.0
       r_free_flags {
-        file_name = "!!!MODIFY HERE!!!"
+        file_name = "./input/nestimation_11.0.mtz"
         
         test_flag_value = 0
       }

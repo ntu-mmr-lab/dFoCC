@@ -1,0 +1,138 @@
+REMARK   3
+REMARK   3 REFINEMENT.
+REMARK   3   PROGRAM     : PHENIX (1.20.1_4487: ???)
+REMARK   3   AUTHORS     : Adams,Afonine,Bunkoczi,Burnley,Chen,Dar,Davis,
+REMARK   3               : Draizen,Echols,Gildea,Gros,Grosse-Kunstleve,Headd,
+REMARK   3               : Hintze,Hung,Ioerger,Liebschner,McCoy,McKee,Moriarty,
+REMARK   3               : Oeffner,Poon,Read,Richardson,Richardson,Sacchettini,
+REMARK   3               : Sauter,Sobolev,Storoni,Terwilliger,Williams,Zwart
+REMARK   3
+REMARK   3  X-RAY DATA.
+REMARK   3  
+REMARK   3  REFINEMENT TARGET : ML
+REMARK   3  
+REMARK   3  DATA USED IN REFINEMENT.
+REMARK   3   RESOLUTION RANGE HIGH (ANGSTROMS) : 1.78    
+REMARK   3   RESOLUTION RANGE LOW  (ANGSTROMS) : 27.75   
+REMARK   3   MIN(FOBS/SIGMA_FOBS)              : 0.00  
+REMARK   3   COMPLETENESS FOR RANGE        (%) : 99.99 
+REMARK   3   NUMBER OF REFLECTIONS             : 49975     
+REMARK   3   NUMBER OF REFLECTIONS (NON-ANOMALOUS) : 49975     
+REMARK   3  
+REMARK   3  FIT TO DATA USED IN REFINEMENT.
+REMARK   3   R VALUE     (WORKING + TEST SET) : 0.3912
+REMARK   3   R VALUE            (WORKING SET) : 0.3898
+REMARK   3   FREE R VALUE                     : 0.4350
+REMARK   3   FREE R VALUE TEST SET SIZE   (%) : 3.10  
+REMARK   3   FREE R VALUE TEST SET COUNT      : 1550      
+REMARK   3  
+REMARK   3  FIT TO DATA USED IN REFINEMENT (IN BINS).
+REMARK   3   BIN  RESOLUTION RANGE  COMPL.    NWORK NFREE   RWORK  RFREE  CCWORK CCFREE
+REMARK   3     1   27.75 -    3.96    1.00     4665   139  0.1822 0.2686   0.960  0.888
+REMARK   3     2    3.95 -    3.14    1.00     4485   145  0.2864 0.3056   0.867  0.823
+REMARK   3     3    3.14 -    2.74    1.00     4416   155  0.4224 0.4189   0.724  0.691
+REMARK   3     4    2.74 -    2.49    1.00     4402   145  0.5048 0.5792   0.606  0.476
+REMARK   3     5    2.49 -    2.31    1.00     4365   136  0.5294 0.5455   0.545  0.441
+REMARK   3     6    2.31 -    2.18    1.00     4382   138  0.5159 0.5804   0.545  0.484
+REMARK   3     7    2.18 -    2.07    1.00     4336   150  0.4943 0.4407   0.527  0.590
+REMARK   3     8    2.07 -    1.98    1.00     4344   130  0.4918 0.5640   0.491  0.308
+REMARK   3     9    1.98 -    1.90    1.00     4380   145  0.5207 0.5537   0.423  0.361
+REMARK   3    10    1.90 -    1.84    1.00     4330   131  0.5212 0.5462   0.335  0.288
+REMARK   3    11    1.84 -    1.78    1.00     4320   136  0.5198 0.5002   0.268  0.194
+REMARK   3  
+REMARK   3   SOLVENT RADIUS     : 1.10    
+REMARK   3   SHRINKAGE RADIUS   : 0.90    
+REMARK   3   GRID STEP FACTOR   : 4.00    
+REMARK   3  
+REMARK   3  ERROR ESTIMATES.
+REMARK   3   COORDINATE ERROR (MAXIMUM-LIKELIHOOD BASED)     : 0.40    
+REMARK   3   PHASE ERROR (DEGREES, MAXIMUM-LIKELIHOOD BASED) : 49.24   
+REMARK   3  
+REMARK   3  STRUCTURE FACTORS CALCULATION ALGORITHM : FFT
+REMARK   3  B VALUES.
+REMARK   3   FROM WILSON PLOT           (A**2) : 7.94    
+REMARK   3  
+REMARK   3  GEOMETRY RESTRAINTS LIBRARY: GEOSTD + MONOMER LIBRARY + CDL V1.2
+REMARK   3  DEVIATIONS FROM IDEAL VALUES - RMSD. RMSZ FOR BONDS AND ANGLES.
+REMARK   3    BOND      :  0.009   0.060   4173  Z= 0.445
+REMARK   3    ANGLE     :  1.082  11.371   5709  Z= 0.591
+REMARK   3    CHIRALITY :  0.060   0.338    594
+REMARK   3    PLANARITY :  0.009   0.065    737
+REMARK   3    DIHEDRAL  : 14.781 134.134   1517
+REMARK   3    MIN NONBONDED DISTANCE : 1.996
+REMARK   3  
+REMARK   3  MOLPROBITY STATISTICS.
+REMARK   3    RAMACHANDRAN PLOT:
+REMARK   3      OUTLIERS :  0.21 %
+REMARK   3      ALLOWED  :  3.51 %
+REMARK   3      FAVORED  : 96.29 %
+REMARK   3    ROTAMER OUTLIERS :  2.17 %
+REMARK   3    CBETA DEVIATIONS :  0.00 %
+REMARK   3    PEPTIDE PLANE:
+REMARK   3      CIS-PROLINE     : 2.33 %
+REMARK   3      CIS-GENERAL     : 0.00 %
+REMARK   3      TWISTED PROLINE : 0.00 %
+REMARK   3      TWISTED GENERAL : 0.00 %
+REMARK   3  
+REMARK   3  RAMA-Z (RAMACHANDRAN PLOT Z-SCORE):
+REMARK   3  THEREFORE, THE VALUES ARE NOT RELATED IN A SIMPLE MANNER.
+REMARK   3    WHOLE: -2.97 (0.32), RESIDUES: 503
+REMARK   3    HELIX: -2.53 (0.24), RESIDUES: 261
+REMARK   3    SHEET:  1.05 (0.89), RESIDUES: 35
+REMARK   3    LOOP : -1.53 (0.41), RESIDUES: 207
+REMARK   3  
+REMARK   3                  min    max   mean <Bi,j>   iso aniso
+REMARK   3     Overall:   17.33 110.46  32.29   4.32  4358     0
+REMARK   3     Protein:   17.33 110.46  31.68   4.34  3978     0
+REMARK   3     Water:     18.85  64.19  41.68    N/A   326     0
+REMARK   3     Other:     17.49  36.56  20.11    N/A    54     0
+REMARK   3     Chain  A:  17.33 110.46  32.29    N/A  4358     0
+REMARK   3     Histogram:
+REMARK   3         Values      Number of atoms
+REMARK   3      17.33 - 26.64      1645
+REMARK   3      26.64 - 35.96      1631
+REMARK   3      35.96 - 45.27       583
+REMARK   3      45.27 - 54.58       272
+REMARK   3      54.58 - 63.89        84
+REMARK   3      63.89 - 73.21        56
+REMARK   3      73.21 - 82.52        47
+REMARK   3      82.52 - 91.83        24
+REMARK   3      91.83 - 101.15       11
+REMARK   3     101.15 - 110.46        5
+REMARK   3  
+REMARK   3
+HELIX    1 AA1 ASN A   20  LYS A   28  1                                   9
+HELIX    2 AA2 SER A   52  ARG A   73  1                                  22
+HELIX    3 AA3 LYS A   83  GLY A   96  1                                  14
+HELIX    4 AA4 GLU A  107  ALA A  124  1                                  18
+HELIX    5 AA5 ASP A  138  ASN A  146  1                                   9
+HELIX    6 AA6 THR A  153  GLY A  165  1                                  13
+HELIX    7 AA7 MET A  185  ALA A  188  5                                   4
+HELIX    8 AA8 ALA A  189  GLY A  194  1                                   6
+HELIX    9 AA9 GLY A  214  PHE A  226  1                                  13
+HELIX   10 AB1 ASP A  228  PHE A  235  1                                   8
+HELIX   11 AB2 GLN A  236  THR A  240  5                                   5
+HELIX   12 AB3 LEU A  253  PHE A  259  1                                   7
+HELIX   13 AB4 SER A  263  HIS A  278  1                                  16
+HELIX   14 AB5 SER A  287  THR A  304  1                                  18
+HELIX   15 AB6 ASN A  325  GLU A  334  1                                  10
+HELIX   16 AB7 PHE A  339  GLY A  353  1                                  15
+HELIX   17 AB8 HIS A  356  THR A  368  1                                  13
+HELIX   18 AB9 SER A  375  LEU A  387  1                                  13
+HELIX   19 AC1 ASP A  391  SER A  403  1                                  13
+HELIX   20 AC2 VAL A  418  LYS A  423  1                                   6
+HELIX   21 AC3 GLY A  428  LEU A  435  1                                   8
+HELIX   22 AC4 PRO A  436  LYS A  439  5                                   4
+HELIX   23 AC5 PRO A  442  ILE A  446  5                                   5
+HELIX   24 AC6 GLU A  448  ALA A  452  5                                   5
+HELIX   25 AC7 PRO A  453  ALA A  460  1                                   8
+HELIX   26 AC8 ASP A  474  SER A  493  1                                  20
+SHEET    1 AA1 5 LEU A  78  ARG A  81  0
+SHEET    2 AA1 5 HIS A  32  LEU A  39  1  N  LEU A  39   O  LEU A  80
+SHEET    3 AA1 5 ASN A   6  PHE A  11  1  N  PHE A  11   O  VAL A  36
+SHEET    4 AA1 5 GLN A  99  CYS A 101  1  O  CYS A 101   N  TRP A  10
+SHEET    5 AA1 5 GLU A 127  VAL A 129  1  O  GLU A 127   N  LEU A 100
+CRYST1   50.840   65.600  153.130  90.00  90.00  90.00 P 21 21 21
+SCALE1      0.019670  0.000000  0.000000        0.00000
+SCALE2      0.000000  0.015244  0.000000        0.00000
+SCALE3      0.000000  0.000000  0.006530        0.00000
